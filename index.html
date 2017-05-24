@@ -8,16 +8,26 @@
 
    <body>
       <div class="background"></div>
-
    </body>
    <script>
       var back = $('div.background');
-      
-      for(var i = 0; i < 17; i++) {
-         back.append('<img class="tess" src="style/background/color' + i + '.svg">');
+      var colors = 17;
+      var rays = 4;      
+
+      for(var i = 0; i < colors; i++) {
+         back.append('<img id="color' + i + '" class="tess" src="style/background/color' + i + '.svg">');
       }
-      for(var i = 0; i < 4; i++) {
-         back.append('<img  class="ray" src="style/background/ray' + i + '.svg">');
+      for(var i = 0; i < rays; i++) {
+         back.append('<img id="ray' + i + '" class="ray" src="style/background/ray' + i + '.svg">');
       }
+      $(document).ready(function(){
+         for(var i = 0; i < colors; i++) {
+            $('#color' + i).fadeIn(400+200 * i);
+         }
+         for(var i = 0; i < rays; i++) {
+            $('#ray' + i).fadeIn(400+800 * i);
+         }
+      });
    </script>
 </html>
+
