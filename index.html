@@ -7,27 +7,238 @@
    <link rel="stylesheet" type="text/css" href="style/style.css">
 
    <body>
-      <div class="background"></div>
+      <div class="head">
+      <h1 class="name"><u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BRIAN NOYAMA</u></h1>
+      <div class="background">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>test
+      </div>
+      </div>
    </body>
    <script>
-      var back = $('div.background');
+      var head = $('div.head');
+      var bottom = $('div.background');
       var colors = 17;
       var rays = 4;      
 
       for(var i = 0; i < colors; i++) {
-         back.append('<img id="color' + i + '" class="tess" src="style/background/color' + i + '.svg">');
+         head.append('<img id="color' + i + '" class="tess" src="style/background/color' + i + '.svg">');
       }
       for(var i = 0; i < rays; i++) {
-         back.append('<img id="ray' + i + '" class="ray" src="style/background/ray' + i + '.svg">');
+         head.append('<img id="ray' + i + '" class="ray" src="style/background/ray' + i + '.svg">');
       }
-      $(document).ready(function(){
-         for(var i = 0; i < colors; i++) {
-            $('#color' + i).fadeIn(400+200 * i);
-         }
+
+      function fadeInRays(){
          for(var i = 0; i < rays; i++) {
-            $('#ray' + i).fadeIn(400+800 * i);
+            $('#ray' + i).fadeIn(800 * i);
          }
-      });
+      }
+
+      $(document).ready(fadeInRays);
+
+      head.height($('#ray0').height());
    </script>
 </html>
 
