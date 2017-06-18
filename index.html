@@ -1,13 +1,221 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8"/>
 		<title>Brian Noyama: Computer Science Enthusiast</title>
 	</head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+   <link rel="stylesheet" type="text/css" href="style/style.css">
 	<body>
-		<svg width="100" height="100">
-			<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+      <h1 class="name">BRIAN NOYAMA</h1>
+		<svg id="origami" viewBox="-19 -15 40 40" width="50%">
 		</svg>
+		<script type="text/javascript">
+			//The element that we will put polygons in.
+			var ori = document.getElementById("origami");
+			sqr = document.createElementNS(ori.namespaceURI, 'polygon');
+			sqr.setAttribute('points', "-4,-4 4,-4 4,4 -4,4");
+			sqr.setAttribute('style', "fill:#FFFFFF;");
+			sqr.setAttribute('fill-opacity', "0.5");
+			ori.appendChild(sqr);
+
+			//The colors randomly selected for shapes.
+			var colors=["#FF0000", "#FF7F00", "#FFb400", 
+				"#00FF00", "#0000FF", "#FF00FF"]
+
+			function ran_color(){
+				return colors[Math.floor(Math.random()*6)];
+			}
+			
+			//The number of frames for our animation.
+			var cnt = 0;
+			var max_cnt = 200.0;
+			
+			//The beginning and ending points for movement.
+			var mv_pnts = [[[-12, 5],[-12, 4]],
+					[[5, 5],[5, 4]],
+					[[-5, 5],[-4, 5]],
+					[[-5, 5],[-6, 5]],
+					[[-5, -5],[-5, -4]], //4
+					[[-5, -5],[-5, -6]],
+					[[-5, -12],[-4, -12]],
+					[[5, -5],[4, -5]],
+					[[5, -5],[6, -5]], //8
+					[[12, -5],[12, -4]],
+					[[5, 7],[5, 7]],
+					[[5, 7],[4, 7]],
+					[[-12, 5],[-12, 4]], //12
+					[[-12, -2],[-11, -2]],
+					[[-12, 5],[-12, 6]],
+					[[-12, 10],[-11, 10]],
+					[[-7, 10],[-7, 9]], //16
+					[[-7, 5],[-8, 5]],
+					[[-7, 11],[-7, 11]],
+					[[-7, 11],[-8, 11]],
+					[[-12, -2],[-12, -2]], //20
+					[[-12, -2],[-13, -1]],
+					[[-12, -2],[-13, -3]],
+					[[-12, 6],[-12, 7]],
+					[[-12, 10],[-13, 10]], //24
+					[[-6, 5],[-6, 6]],
+					[[-6, 5],[-6, 5]],
+					[[-19, -9],[-19, -9]],
+					[[-19, -9],[-19, -7]], //28
+					[[-5, -12],[-6, -12]],
+					[[-5, -2],[-5, -1]],
+					[[-5, -7],[-5, -8]],
+					[[-16, 10],[-16, 9]], //32
+					[[-16, 6],[-15, 6]],
+					[[-16, 13],[-15, 13]],
+					[[-16, 10],[-16, 11]],
+					[[-13, 10],[-14, 10]], //36
+					[[-13, 13],[-13, 12]],
+					[[-13, 14],[-13, 14]],
+					[[-13, 14],[-14, 14]],
+					[[-16, 6],[-16, 6]], //40
+					[[-16, 6],[-17, 7]],
+					[[-16, 13],[-17, 13]],
+					[[-19, 13],[-19, 12]],
+					[[-10, -7],[-9, -7]], //44
+					[[-16, 6],[-17, 5]],
+					[[-19, 3],[-19, 3]],
+					[[-19, 3],[-19, 5]],
+					[[-19, 10],[-18, 10]], //48
+					[[-19, 10],[-19, 10]],
+					[[-19, 10],[-19, 11]],
+					[[-19, 15],[-18, 15]],
+					[[-17, 15],[-17, 14]], //52
+					[[-19, 15],[-19, 15]],
+					[[-17, 13],[-18, 13]],
+					[[-17, 16],[-18, 16]],
+					[[-17, 16],[-17, 16]], //56
+					[[-19, 13],[-19, 14]],
+					[[-16, 13],[-16, 13]],
+					[[-16, 13],[-16, 14]],
+					[[-19, 15],[-19, 14]], //60
+					[[-12, 10],[-12, 10]],
+					[[-12, 10],[-12, 11]],
+					[[-10, -12],[-10, -11]],
+					[[-10, -15],[-10, -15]], //64
+					[[-10, -15],[-9, -15]],
+					[[-10, -12],[-10, -13]],
+					[[-6, -15],[-7, -15]],
+					[[-6, -15],[-6, -15]], //68
+					[[-6, -12],[-7, -12]],
+					[[2, -12],[3, -13]],
+					[[2, -12],[2, -12]],
+					[[2, -12],[2, -11]], //72
+					[[2, -5],[1, -5]],
+					[[2, -12],[1, -13]],
+					[[5, -15],[3, -15]],
+					[[5, -15],[5, -15]], //76
+					[[-10, -13],[-10, -14]],
+					[[-10, -7],[-10, -7]],
+					[[-10, -7],[-11, -6]],
+					[[-10, -16],[-11, -16]], //80
+					[[-10, -7],[-11, -8]],
+					[[-19, 2],[-19, 2]],
+					[[-19, 2],[-19, 0]],
+					[[-13, -13],[-12, -13]], //84
+					[[-13, -16],[-13, -15]],
+					[[-16, -13],[-16, -13]],
+					[[-16, -13],[-17, -12]],
+					[[-16, -13],[-17, -14]], //88
+					[[-19, -10],[-19, -12]],
+					[[-19, -10],[-19, -10]],
+					[[-16, -15],[-17, -15]],
+					[[-16, -15],[-16, -15]], //92
+					[[-13, -15],[-12, -15]],
+					[[0, 0],[0, 0]],
+					[[0, 0],[0, 0]],
+					[[0, 0],[0, 0]], //96
+					[[0, 0],[0, 0]],
+					[[0, 0],[0, 0]],
+					[[0, 0],[0, 0]],
+					];
+			
+			//The points that will move in the animation.
+			var pnts = [];
+			var pnts_length = mv_pnts.length;
+
+			for (var i = 0; i < pnts_length; i++) {  
+				pnts[i] = [0, 0];
+			}
+			//The polygon points
+			var poly_pnts = [[pnts[0], pnts[1], pnts[2], pnts[3]],
+				[pnts[2], pnts[4], pnts[5], pnts[6]],
+				[pnts[4], pnts[7], pnts[8], pnts[9]],
+				[pnts[7], pnts[1], pnts[10], pnts[11]],
+				[pnts[12], pnts[13], pnts[15], pnts[14]], //4
+				[pnts[13], pnts[30], pnts[21], pnts[20]],
+				[pnts[30], pnts[3], pnts[29], pnts[31]],
+				[pnts[17], pnts[14], pnts[25], pnts[26]],
+				[pnts[17], pnts[16], pnts[18], pnts[19]], //8
+				[pnts[23], pnts[24], pnts[22], pnts[20]],
+				[pnts[27], pnts[28], pnts[21], pnts[20]],
+				[pnts[32], pnts[16], pnts[15], pnts[24]],
+				[pnts[32], pnts[33], pnts[34], pnts[35]], //12
+				[pnts[23], pnts[33], pnts[40], pnts[41]],
+				[pnts[40], pnts[45], pnts[42], pnts[35]],
+				[pnts[40], pnts[41], pnts[47], pnts[46]],
+				[pnts[49], pnts[48], pnts[35], pnts[50]], //16
+				[pnts[42], pnts[43], pnts[37], pnts[34]],
+				[pnts[36], pnts[37], pnts[38], pnts[39]],
+				[pnts[43], pnts[48], pnts[51], pnts[57]],
+				[pnts[60], pnts[52], pnts[51], pnts[53]], //20
+				[pnts[57], pnts[54], pnts[58], pnts[59]],
+				[pnts[55], pnts[56], pnts[52], pnts[54]], 
+				[pnts[61], pnts[62], pnts[35], pnts[36]], 
+				[pnts[6], pnts[72], pnts[63], pnts[29]], //24
+				[pnts[71], pnts[72], pnts[73], pnts[74]], 
+				[pnts[71], pnts[74], pnts[75], pnts[76]], 
+				[pnts[70], pnts[71], pnts[69], pnts[66]], 
+				[pnts[67], pnts[68], pnts[69]], //28
+				[pnts[64], pnts[65], pnts[44], pnts[63]], 
+				[pnts[31], pnts[81], pnts[78], pnts[44]], 
+				[pnts[80], pnts[77], pnts[78], pnts[79]], 
+				[pnts[81], pnts[78], pnts[82], pnts[83]], //32
+				[pnts[77], pnts[84], pnts[86], pnts[88]], 
+				[pnts[93], pnts[85], pnts[84]], 
+				[pnts[88], pnts[86], pnts[90], pnts[89]], 
+				[pnts[91], pnts[92], pnts[86], pnts[87]] //36
+				//[pnts[], pnts[], pnts[], pnts[]], 
+				//[pnts[], pnts[], pnts[], pnts[]], 
+				//[pnts[], pnts[], pnts[], pnts[]], 
+				//[pnts[], pnts[], pnts[], pnts[]], 
+				];
+			var poly_length = poly_pnts.length;
+			
+			//The polygon elements in the svg element.
+			var polys = [];
+			
+
+
+			for (var i = 0; i < poly_length; i++) {  
+				polys[i] = document.createElementNS(ori.namespaceURI, 'polygon');
+				polys[i].setAttribute('class', "fold");
+				polys[i].setAttribute('style', "fill:" + ran_color() + ";"); 
+				ori.appendChild(polys[i]);
+			}
+
+			function fold() {
+				for (var i = 0; i < pnts_length; i++) {
+					pnts[i][0] = ((max_cnt - cnt) * mv_pnts[i][0][0] + cnt * mv_pnts[i][1][0])/max_cnt;
+					pnts[i][1] = ((max_cnt - cnt) * mv_pnts[i][0][1] + cnt * mv_pnts[i][1][1])/max_cnt;
+				}
+
+				for (var i = 0; i < poly_length; i++) {
+					polys[i].setAttribute('points', poly_pnts[i].map(e => e.join()).join());
+				}
+
+				cnt += 1;
+				if (cnt <= max_cnt){
+					requestAnimationFrame(fold);
+				}
+			}
+			fold();
+		</script>
 	</body>
 </html>
 

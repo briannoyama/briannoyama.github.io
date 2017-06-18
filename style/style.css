@@ -1,49 +1,17 @@
 @font-face { font-family: Gilbert-Color; src: url('Gilbert-Color.otf'); } 
 
 h1.name {
-   text-align: right;
-   font-family: Gilbert-Color;
-   font-size: 4em;
+	text-align: right;
+	font-family: Gilbert-Color;
+	font-size: 4em;
 }
 
-img.ray {
-   position: absolute;
-   left: 0%;
-   top: 0%;
-   width: 100%;
-   display: none;
-   z-index: -1;
+polygon.fold{
+	fill-opacity: 0.5;
 }
 
-img.tess {
-   position: absolute;
-   left: 0%;
-   top: 0%;
-   width: 100%;
-   z-index: -2;
-}
-
-body {
-   background-color: #000000;
-}
-
-div.background{
-   background-image: url('background/bar.svg');
-   background-position: left top;
-   background-repeat: repeat-y;
-   position: absolute;
-   background-color: #ffffff;
-   top: 100%;
-   left: 0;
-   width: 100%;
-   background-size: 100%;
-}
-
-div.head{
-   position: absolute;
-   background-color: #ffffff;
-   top: 10%;
-   left: 15%;
-   width: 70%;
-   z-index: -3;
+svg#origami{
+	position:absolute;
+	left: 0;
+	top: 0;
 }
