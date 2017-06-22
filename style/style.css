@@ -7,7 +7,13 @@ h1.name {
 }
 
 polygon.fold{
-	fill-opacity: 0.5;
+	opacity: 0.5;
+}
+
+path.fold{
+	opacity: 0.5;
+	stroke-width: 1;
+	fill: none;
 }
 
 svg#origami{

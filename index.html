@@ -11,33 +11,33 @@
       <h1 class="name">BRIAN NOYAMA</h1>
 		<svg id="origami" viewBox="-19 -15 90 120" width="100%">
 			<path id="line0" class="fold" d="M -17.5 16 q 0 0.5 -0.5 1 q -0.5 0.5 -0.5 1  l 0 9999" 
-						  stroke="blue" stroke-width="1" fill="none"/>
+						  />
 			<path id="line1" class="fold" d="M -16 13.5 q 0.5 0 0.5 0.5 l 0 2 q 0 0.5 -0.5 1 l -1.5, 1.5 q -0.5 0.5 -0.5 1  l 0 9999"
-						  stroke="red" stroke-width="1" fill="none"/>
+						  />
 			<path id="line2" class="fold" d="M -13.5 14 l 0 2 q 0 0.5 -0.5 1 l -3, 3 q -0.5 0.5 -0.5 1  l 0 9999" 
-						  stroke="green" stroke-width="1" fill="none"/>
+						  />
 			<path id="line3" class="fold" d="M -12 10.5 q 0.5 0 0.5 0.5 l 0 5 q 0 0.5 -0.5 1 l -4.5, 4.5 q -0.5 0.5 -0.5 1  l 0 9999" 
-						  stroke="yellow" stroke-width="1" fill="none"/>
+						  />
 			<path id="line4" class="fold" d="M -7.5 11 l 0 3 q 0 0.5 -0.5 1 l -8, 8 q -0.5 0.5 -0.5 1  l 0 9999" 
-						  stroke="purple" stroke-width="1" fill="none"/>
+						  />
 			<path id="line5" class="fold" d="M -6 5.5 q 0.5 0 0.5 0.5 l 0 8 q 0 0.5 -0.5 1 l -9.5, 9.5 q -0.5 0.5 -0.5 1  l 0 9999" 
-						  stroke="orange" stroke-width="1" fill="none"/>
+						  />
 			<path id="line6" class="fold" d="M 4.5 6 q 0 0.5 -0.5 1 l -19, 19 q -0.5 0.5 -0.5 1  l 0 9999" 
-						  stroke="blue" stroke-width="1" fill="none"/>
+						  />
 			<path id="line7" class="fold" d="M 5.5 3 q 0 0.5 0.5 0.5 l 10 0 q 0.5 0 1 -0.5 l 14 -14 q 0.5 -0.5 1 -0.5 l 999 0" 
-						  stroke="blue" stroke-width="1" fill="none"/>
+						  />
 			<path id="line8" class="fold" d="M 13 1.5 l 3 0 q 0.5 0 1 -0.5 l 12.5 -12.5 q 0.5 -0.5 1 -0.5 l 999 0" 
-						  stroke="blue" stroke-width="1" fill="none"/>
+						  />
 			<path id="line9" class="fold" d="M 12.5 -5 q 0 0.5 0.5 0.5 l 7 0 q 0.5 0 1 -0.5 l 7 -7 q 0.5 -0.5 1 -0.5 l 999 0" 
-						  stroke="blue" stroke-width="1" fill="none"/>
+						  />
 			<path id="line10" class="fold" d="M 18 -6.5 l 2 0 q 0.5 0 1 -0.5 l 5.5 -5.5 q 0.5 -0.5 1 -0.5 l 999 0" 
-						  stroke="blue" stroke-width="1" fill="none"/>
+						  />
 			<path id="line11" class="fold" d="M 16.5 -9 q 0 0.5 0.5 0.5 l 3 0 q 0.5 0 1 -0.5 l 4 -4 q 0.5 -0.5 1 -0.5 l 999 0" 
-						  stroke="blue" stroke-width="1" fill="none"/>
+						  stroke-width="1" fill="none"/>
 			<path id="line12" class="fold" d="M 20 -10.5 q 0.5 0 1 -0.5 l 2.5 -2.5 q 0.5 -0.5 1 -0.5 l 999 0" 
-						  stroke="blue" stroke-width="1" fill="none"/>
+						  />
 			<path id="line13" class="fold" d="M 20 -14.5 l 999 0" 
-						  stroke="blue" stroke-width="1" fill="none"/>
+						  />
 		</svg>
 		<script type="text/javascript">
 			//The element that we will put polygons in.
@@ -52,10 +52,6 @@
 			var colors=["#FF0000", "#FF7F00", "#FFb400", 
 				"#00FF00", "#0000FF", "#FF00FF"]
 
-			function ran_color(){
-				return colors[Math.floor(Math.random()*6)];
-			}
-			
 			//The number of frames for our animation.
 			var cnt = 0;
 			var max_cnt = 200.0;
@@ -210,7 +206,7 @@
 			var pnts_length = mv_pnts.length;
 
 			for (var i = 0; i < pnts_length; i++) {  
-				pnts[i] = [0, 0];
+				pnts[i] = [0, 0, -1];
 			}
 			//The polygon points
 			var poly_pnts = [[pnts[0], pnts[1], pnts[2], pnts[3]],
@@ -270,21 +266,45 @@
 				[pnts[134], pnts[136], pnts[104], pnts[139]], 
 				[pnts[138], pnts[136], pnts[137], pnts[134]], 
 				[pnts[121], pnts[122], pnts[125], pnts[124]] //56
-				//[pnts[], pnts[], pnts[], pnts[]], 
-				//[pnts[], pnts[], pnts[], pnts[]], 
 				];
 			var poly_length = poly_pnts.length;
 			
+			path_pnts = [pnts[55], pnts[59], pnts[39], pnts[62], pnts[19], pnts[25], 
+				pnts[11], pnts[95], pnts[98], pnts[113], pnts[116], pnts[111], pnts[131],
+				pnts[104]];
 			//The polygon elements in the svg element.
 			var polys = [];
 			
-
-
 			for (var i = 0; i < poly_length; i++) {  
+				color_index = Math.floor(Math.random()*6);
+				assigned = false;
+				while(!assigned){
+					assigned = true;
+					color_index = (color_index + 1 ) % colors.length;
+					for (var j = 0; j < poly_pnts[i].length; j++) {
+						if (poly_pnts[i][j][2] == color_index){
+							assigned = false;
+						}
+					}
+				}
+				
+				for (var j = 0; j < poly_pnts[i].length; j++) {
+					//Only assign a color if we have not assigned one before.
+					if (poly_pnts[i][j][2] == -1){
+						poly_pnts[i][j][2] = color_index;
+					}
+				}
+
 				polys[i] = document.createElementNS(ori.namespaceURI, 'polygon');
 				polys[i].setAttribute('class', "fold");
-				polys[i].setAttribute('style', "fill:" + ran_color() + ";"); 
+				polys[i].setAttribute('style', "fill:" + colors[color_index] + ";"); 
 				ori.appendChild(polys[i]);
+			}
+			path_pnts_length=path_pnts.length;
+			for (var i = 0; i < path_pnts_length; i++){
+				var path = document.getElementById("line"+i);
+
+				path.setAttribute('style', "stroke:" + colors[path_pnts[i][2]] + ";"); 
 			}
 
 			function fold() {
@@ -294,7 +314,7 @@
 				}
 
 				for (var i = 0; i < poly_length; i++) {
-					polys[i].setAttribute('points', poly_pnts[i].map(e => e.join()).join());
+					polys[i].setAttribute('points', poly_pnts[i].map(e => e[0] + ' ' + e[1]).join());
 				}
 
 				cnt += 1;
