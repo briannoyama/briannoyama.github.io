@@ -9,7 +9,7 @@
    <link rel="stylesheet" type="text/css" href="style/style.css">
 	<body>
       <h1 class="name">BRIAN NOYAMA</h1>
-		<svg id="origami" viewBox="-19 -15 90 120" width="100%">
+		<svg id="origami" viewBox="-19 -15 90 120">
 			<path id="line0" class="fold" d="M -17.5 16 q 0 0.5 -0.5 1 q -0.5 0.5 -0.5 1  l 0 9999" 
 						  />
 			<path id="line1" class="fold" d="M -16 13.5 q 0.5 0 0.5 0.5 l 0 2 q 0 0.5 -0.5 1 l -1.5, 1.5 q -0.5 0.5 -0.5 1  l 0 9999"
@@ -42,15 +42,10 @@
 		<script type="text/javascript">
 			//The element that we will put polygons in.
 			var ori = document.getElementById("origami");
-			sqr = document.createElementNS(ori.namespaceURI, 'polygon');
-			sqr.setAttribute('points', "-4,-4 4,-4 4,4 -4,4");
-			sqr.setAttribute('style', "fill:#FFFFFF;");
-			sqr.setAttribute('fill-opacity', "0.5");
-			ori.appendChild(sqr);
 
 			//The colors randomly selected for shapes.
-			var colors=["#FF0000", "#FF7F00", "#FFb400", 
-				"#00FF00", "#0000FF", "#FF00FF"]
+			var colors=["#FF0000", "#FF6100", "#FFb400", 
+				"#00D47C", "#008ED6", "#FE2BD0"]
 
 			//The number of frames for our animation.
 			var cnt = 0;
@@ -270,13 +265,13 @@
 			var poly_length = poly_pnts.length;
 			
 			path_pnts = [pnts[55], pnts[59], pnts[39], pnts[62], pnts[19], pnts[25], 
-				pnts[11], pnts[95], pnts[98], pnts[113], pnts[116], pnts[111], pnts[131],
+				pnts[11], pnts[95], pnts[98], pnts[113], pnts[116], pnts[133], pnts[131],
 				pnts[104]];
 			//The polygon elements in the svg element.
 			var polys = [];
 			
 			for (var i = 0; i < poly_length; i++) {  
-				color_index = Math.floor(Math.random()*6);
+				color_index = Math.floor(Math.random()*colors.length);
 				assigned = false;
 				while(!assigned){
 					assigned = true;

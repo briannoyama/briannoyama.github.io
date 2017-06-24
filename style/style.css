@@ -4,14 +4,18 @@ h1.name {
 	text-align: right;
 	font-family: Gilbert-Color;
 	font-size: 4em;
+	text-shadow: -2px -2px #FFFFFF, 
+					2px -2px #FFFFFF,
+					-2px 2px #FFFFFF,
+					2px 2px #FFFFFF;
 }
 
 polygon.fold{
-	opacity: 0.5;
+	opacity: 0.667;
 }
 
 path.fold{
-	opacity: 0.5;
+	opacity: 0.667;
 	stroke-width: 1;
 	fill: none;
 }
@@ -20,4 +24,6 @@ svg#origami{
 	position:absolute;
 	left: 0;
 	top: 0;
+	width: 100%;
+	z-index: -1;
 }
