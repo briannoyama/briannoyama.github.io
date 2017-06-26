@@ -1,5 +1,5 @@
 /*
- *
+ *Draws and animates the polygons responsible that represents the pleats.
  *
  */
 var polygons = (function(canvas, coordinates){
@@ -46,10 +46,18 @@ var polygons = (function(canvas, coordinates){
 		svg.appendChild(polys[i]);
 	}
 
+	//https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line
+	var a = 17, b = 25, c = -156;
+	var den = Math.abs(a*-19 + b*-15 + c);
 	function anim() {
+		var t = cnt / max_cnt;
 		for (var i = 0; i < pnts_length; i++) {
-			pnts[i][0] = ((max_cnt - cnt) * mv_pnts[i][0][0] + cnt * mv_pnts[i][1][0])/max_cnt;
-			pnts[i][1] = ((max_cnt - cnt) * mv_pnts[i][0][1] + cnt * mv_pnts[i][1][1])/max_cnt;
+			var dist = Math.abs(a * mv_pnts[i][0][0] + b * mv_pnts[i][0][1] + c) /
+				den;
+			dist = 1 - dist * dist * dist;
+			var percent = (1 - t) * t * dist + t * ((1 - t) * dist + t);
+			pnts[i][0] = (1 - percent) * mv_pnts[i][0][0] + percent * mv_pnts[i][1][0];
+			pnts[i][1] = (1 - percent) * mv_pnts[i][0][1] + percent * mv_pnts[i][1][1];
 		}
 
 		for (var i = 0; i < poly_length; i++) {
