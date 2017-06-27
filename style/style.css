@@ -20,10 +20,15 @@ path.fold{
 	fill: none;
 }
 
+circle.fold{
+	fill: #071F4B;
+}
+
 svg#origami{
-	position:absolute;
-	left: 0;
+	position:fixed;
+	left: 50%;
+	margin-left: -400px;
 	top: 0;
-	width: 100%;
+	width: 800px;
 	z-index: -1;
 }
