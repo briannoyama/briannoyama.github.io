@@ -5,7 +5,7 @@ h1#name {
 	text-align: center;
 	color: #071F4B;
 	font-family: Gilbert;
-	font-size: 2.5em;
+	font-size: 14vw;
 	text-shadow: -2px -2px #FFFFFF, 
 					2px -2px #FFFFFF,
 					-2px 2px #FFFFFF,
@@ -42,7 +42,17 @@ div#page{
 	left: 0; 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 800px) and (orientation: landscape){
+
+	h1#name {
+		font-family: Gilbert-Color;
+		text-align: right;
+		font-size: 3.5em;
+	}
+
+}
+
+@media screen and (min-width: 800px) {
 	svg#origami{
 		position:fixed;
 		left: 0;
