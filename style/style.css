@@ -1,9 +1,9 @@
 @font-face { font-family: Gilbert-Color; src: url('Gilbert-Color.otf'); } 
 
-h1.name {
-	text-align: right;
+h1#name {
+	text-align: center;
 	font-family: Gilbert-Color;
-	font-size: 4em;
+	font-size: 7vw;
 	text-shadow: -2px -2px #FFFFFF, 
 					2px -2px #FFFFFF,
 					-2px 2px #FFFFFF,
@@ -26,9 +26,44 @@ circle.fold{
 
 svg#origami{
 	position:fixed;
-	left: 50%;
-	margin-left: -400px;
+	left: 0;
+	margin-left: 0;
 	top: 0;
 	width: 800px;
 	z-index: -1;
+}
+
+div#page{
+	width:100%; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	margin-left: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1224px){
+	svg#origami{
+		position:fixed;
+		left: 50%;
+		margin-left: -400px;
+		top: 0;
+		width: 800px;
+		z-index: -1;
+	}
+	h1#name {
+		text-align: right;
+	}
+	
+	div#page{
+		width:800px; 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		margin-left: 0;
+	}
+}
+
+
+@media screen and (min-width: 1224px) {
+
 }
