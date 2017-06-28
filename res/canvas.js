@@ -8,7 +8,7 @@ var canvas = (function(colors){
 	//The element that we will put polygons in.
 	var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 	//TODO Change the viewBox based off of the size of the parent element.
-	svg.setAttribute('viewBox', '-19 -15 90 160');
+	svg.setAttribute('viewBox', '-19 -15 90 260');
 	svg.setAttribute('id','origami');
 	body.appendChild(svg);
 
@@ -20,7 +20,7 @@ var canvas = (function(colors){
 			//Math.round(w_offset)
 			svg.setAttribute('style','top: auto; bottom: 0;');
 		} else {
-			svg.setAttribute('style','top: -' +w_offset+'px;');
+			svg.setAttribute('style','top: -' +w_offset+'px; bottom: auto;');
 		}
 	});
 
