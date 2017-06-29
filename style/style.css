@@ -27,38 +27,26 @@ circle.fold{
 }
 
 svg#origami{
-	position:fixed;
+	position:absolute;
 	left: 0;
-	margin-left: 0;
 	top: 0;
 	width: 800px;
 	z-index: -1;
 }
 
 div#page{
-	width:100%; 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
+	overflow: hidden;
+	width:100%;
+	min-height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape){
-
-	h1#name {
-		font-family: Gilbert-Color;
-		text-align: right;
-		font-size: 3.5em;
-	}
-
-}
 
 @media screen and (min-width: 800px) {
 	svg#origami{
-		position:fixed;
-		left: 0;
-		top: 0;
 		width: 100%;
-		z-index: -1;
 	}
 	h1#name {
 		font-family: Gilbert-Color;

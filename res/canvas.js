@@ -15,12 +15,12 @@ var canvas = (function(colors){
 
 	window_.scroll(function(){
 		var w_offset = $(window).scrollTop();
-		var height = svg.getBoundingClientRect().height*50/160;
+		var height = svg.getBoundingClientRect().height*50/260;
 		if (w_offset > height){
 			//Math.round(w_offset)
 			svg.setAttribute('style','top: auto; bottom: 0;');
 		} else {
-			svg.setAttribute('style','top: -' +w_offset+'px; bottom: auto;');
+			svg.setAttribute('style','top: 0; bottom: auto;');
 		}
 	});
 
