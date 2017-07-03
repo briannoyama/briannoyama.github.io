@@ -43,7 +43,16 @@ div#page{
 	left: 0;
 }
 
+ul.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
+ul.menu a{
+	display: block;
+	width: 10%;
+}
 @media screen and (min-width: 800px) {
 	svg#origami{
 		width: 100%;

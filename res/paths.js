@@ -2,7 +2,7 @@
  * Contains the data and animations for connecting paths.
  *
  */
-var paths = (function(canvas, coordinates){
+var paths = (function(canvas, coordinates, polygons){
 
 	var cnt = 0;
 	var max_cnt = 200.0;
@@ -62,6 +62,8 @@ var paths = (function(canvas, coordinates){
 
 		if (cnt <= max_cnt){
 			requestAnimationFrame(anim);
+		} else {
+			requestAnimationFrame(polygons.anim);
 		}
 	
 	}

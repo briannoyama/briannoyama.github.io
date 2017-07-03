@@ -18,6 +18,14 @@
 	<body>
 		<div id="page">
       <h1 id="name">BRIAN NOYAMA</h1>
+		<div id="menu">
+			<ul class="menu">
+				<li><a>About</a></li>
+				<li><a>Blog</a></li>
+				<li><a>Resume</a></li>
+				<li><a>Contact</a></li>
+			</ul>
+		</div id="menu">
 		<script type="text/javascript">
 
 			//The colors randomly selected for shapes.
@@ -26,9 +34,8 @@
 			var canvas_ = canvas(colors);
 			circle(canvas_);
 			var polygons_ = polygons(canvas_, coordinates);
-			var paths_ = paths(canvas_, coordinates);
+			var paths_ = paths(canvas_, coordinates, polygons_);
 			
-			setTimeout(polygons_.anim, 3333);
 			requestAnimationFrame(paths_.anim);
 		</script>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br>
