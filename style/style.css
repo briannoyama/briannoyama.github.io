@@ -10,6 +10,10 @@ h1#name {
 					2px -2px #FFFFFF,
 					-2px 2px #FFFFFF,
 					2px 2px #FFFFFF;
+	padding: 0px 0px;
+	display: inline;
+	background-color: #999;
+	float:right;
 }
 
 polygon.fold{
@@ -43,26 +47,69 @@ div#page{
 	left: 0;
 }
 
+div#menu{
+	position: relative;
+	left: 0%;
+	width : 100%;
+	text-align: center;
+	color: #071F4B;
+	font-family: Gilbert;
+	font-size: 14vw;
+	text-shadow: -2px -2px #FFFFFF, 
+					2px -2px #FFFFFF,
+					-2px 2px #FFFFFF,
+					2px 2px #FFFFFF;
+	padding: 0px 0px;
+}
+
 ul.menu{
+	position: relative;
+	left: 0%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+ul.menu li{
+	float: left;
+	width: 25%;
+	font-size: 6vw;
 }
 
 ul.menu a{
+	font-family: Gilbert;
 	display: block;
-	width: 10%;
+	color: #071F4B;
+	text-shadow: -2px -2px #FFFFFF, 
+					2px -2px #FFFFFF,
+					-2px 2px #FFFFFF,
+					2px 2px #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px; 
 }
+
 @media screen and (min-width: 800px) {
 	svg#origami{
 		width: 100%;
 	}
-	h1#name {
-		font-family: Gilbert-Color;
+	div#menu {
 		text-align: right;
+		font-family: Gilbert-Color;
 		font-size: 7vw;
+		left: 50%;
+		width: 50%;
 	}
-	
+
+	ul.menu li{
+		float: left;
+		width: 25%;
+		font-size: 2vw;
+		background-color: #000;
+		border-radius: 50%;
+	}
 }
 
 
