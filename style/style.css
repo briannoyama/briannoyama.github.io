@@ -1,21 +1,6 @@
 @font-face { font-family: Gilbert-Color; src: url('Gilbert-Color.otf'); } 
 @font-face { font-family: Gilbert; src: url('Gilbert.otf'); } 
 
-h1#name {
-	text-align: center;
-	color: #071F4B;
-	font-family: Gilbert;
-	font-size: 14vw;
-	text-shadow: -2px -2px #FFFFFF, 
-					2px -2px #FFFFFF,
-					-2px 2px #FFFFFF,
-					2px 2px #FFFFFF;
-	padding: 0px 0px;
-	display: inline;
-	background-color: #999;
-	float:right;
-}
-
 polygon.fold{
 	opacity: 0.667;
 }
@@ -47,7 +32,7 @@ div#page{
 	left: 0;
 }
 
-div#menu{
+div#title{
 	position: relative;
 	left: 0%;
 	width : 100%;
@@ -55,16 +40,25 @@ div#menu{
 	color: #071F4B;
 	font-family: Gilbert;
 	font-size: 14vw;
-	text-shadow: -2px -2px #FFFFFF, 
-					2px -2px #FFFFFF,
-					-2px 2px #FFFFFF,
-					2px 2px #FFFFFF;
-	padding: 0px 0px;
+	text-shadow: -1px -1px #FFFFFF, 
+					1px -1px #FFFFFF,
+					-1px 1px #FFFFFF,
+					1px 1px #FFFFFF;
+	padding-top:4%;
 }
 
-ul.menu{
+div#subtitle{
+	font-size: 2.75vw;
+	line-height: 80%;
+	float: right;
+	padding-right: 47%;
+	font-family: Gilbert;
+	display: none;
+}
+ul#menu{
 	position: relative;
-	left: 0%;
+	top: 0;
+	right: 0%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -72,41 +66,49 @@ ul.menu{
 	height: 100%;
 }
 
-ul.menu li{
+ul#menu li{
 	float: left;
 	width: 25%;
 	font-size: 6vw;
 }
 
-ul.menu a{
+ul#menu a{
 	font-family: Gilbert;
 	display: block;
 	color: #071F4B;
-	text-shadow: -2px -2px #FFFFFF, 
-					2px -2px #FFFFFF,
-					-2px 2px #FFFFFF,
-					2px 2px #FFFFFF;
+	text-shadow: -1px -1px #FFFFFF, 
+					1px -1px #FFFFFF,
+					-1px 1px #FFFFFF,
+					1px 1px #FFFFFF;
 	text-align: center;
 	text-decoration: none;
-	padding: 15px; 
+	padding: 1%; 
 }
 
 @media screen and (min-width: 800px) {
 	svg#origami{
 		width: 100%;
 	}
-	div#menu {
-		text-align: right;
+
+	div#title{
+		text-align:left;
+		margin-left:45%;
 		font-family: Gilbert-Color;
-		font-size: 7vw;
-		left: 50%;
-		width: 50%;
+		font-size: 9vw;
 	}
 
-	ul.menu li{
+	div#subtitle{
+		display: block;
+	}
+
+	ul#menu{
+		width: 55%;
+	}
+
+	ul#menu li{
 		float: left;
 		width: 25%;
-		font-size: 2vw;
+		font-size: 3.5vw;
 		background-color: #000;
 		border-radius: 50%;
 	}
