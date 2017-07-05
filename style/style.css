@@ -51,10 +51,11 @@ div#subtitle{
 	font-size: 2.75vw;
 	line-height: 80%;
 	float: right;
-	padding-right: 47%;
+	padding-right: 46.5%;
 	font-family: Gilbert;
 	display: none;
 }
+
 ul#menu{
 	position: relative;
 	top: 0;
@@ -63,7 +64,7 @@ ul#menu{
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100%;
+	padding-bottom: 10%;
 }
 
 ul#menu li{
