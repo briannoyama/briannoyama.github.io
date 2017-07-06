@@ -15,12 +15,20 @@ circle.fold{
 	fill: #071F4B;
 }
 
+svg.link{
+	position:absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: -1;
+}
+
 svg#origami{
 	position:absolute;
 	left: 0;
 	top: 0;
 	width: 800px;
-	z-index: -1;
+	z-index: -2;
 }
 
 div#page{
@@ -51,7 +59,7 @@ div#subtitle{
 	font-size: 2.75vw;
 	line-height: 80%;
 	float: right;
-	padding-right: 46.5%;
+	padding-right: 46%;
 	font-family: Gilbert;
 	display: none;
 }
@@ -59,7 +67,7 @@ div#subtitle{
 ul#menu{
 	position: relative;
 	top: 0;
-	right: 0%;
+	left: 0;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -69,28 +77,27 @@ ul#menu{
 
 ul#menu li{
 	float: left;
-	width: 25%;
+	padding-left:3%;
 	font-size: 6vw;
 }
 
 ul#menu a{
-	font-family: Gilbert;
 	display: block;
+	position: relative;
+	left: 0;
+	top: 0;
+	font-family: Gilbert;
 	color: #071F4B;
 	text-shadow: -1px -1px #FFFFFF, 
 					1px -1px #FFFFFF,
 					-1px 1px #FFFFFF,
 					1px 1px #FFFFFF;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
 	padding: 1%; 
 }
 
-@media screen and (min-width: 800px) {
-	svg#origami{
-		width: 100%;
-	}
-
+@media screen and (min-width: 600px) {
 	div#title{
 		text-align:left;
 		margin-left:45%;
@@ -103,16 +110,17 @@ ul#menu a{
 	}
 
 	ul#menu{
+		margin-left: 45%;
 		width: 55%;
 	}
 
 	ul#menu li{
-		float: left;
-		width: 25%;
 		font-size: 3.5vw;
-		background-color: #000;
-		border-radius: 50%;
 	}
 }
 
-
+@media screen and (min-width: 800px) {
+	svg#origami{
+		width: 100%;
+	}
+}
