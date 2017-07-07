@@ -46,7 +46,6 @@ var polygons = (function(canvas, coordinates){
 		svg.appendChild(polys[i]);
 	}
 
-	//https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line
 	function anim() {
 		for (var i = 0; i < pnts_length; i++) {
 			pnts[i][0] = ((max_cnt - cnt) * mv_pnts[i][0][0] + cnt * mv_pnts[i][1][0])/max_cnt;

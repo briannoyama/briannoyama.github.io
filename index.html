@@ -18,39 +18,33 @@
 	<script  type="text/javascript" src="./res/jquery.min.js"></script>
 	<body>
 		<div id="page">
-		<div id="title">
-			NOYAMA 
-			<div id="subtitle"><br/>Computer Science,<br/>Math, Origami, <br/>Economics, &amp; Life. </div>  
-			<br/>
-		</div>
-		<ul id="menu">
-			<li><a class="circle" href="">&nbsp;&nbsp;Blog</a></li>
-			<li><a class="circle" href="">&nbsp;&nbsp;About</a></li>
-			<li><a class="circle" href="">&nbsp;&nbsp;R&#233;sum&#233;</a></li>
-			<li><a class="circle" href="">&nbsp;&nbsp;Contact</a></li>
-		</ul>
-		<script type="text/javascript">
+			<div id="title">
+				NOYAMA 
+				<div id="subtitle"><br/>Computer Science,<br/>Math, Origami, <br/>Economics, &amp; Life. </div>  
+				<br/>
+			</div>
+			<ul id="menu">
+				<li><a class="circle" href="">&nbsp;&nbsp;Blog</a></li>
+				<li><a class="circle" href="">&nbsp;&nbsp;About</a></li>
+				<li><a class="circle" href="">&nbsp;&nbsp;R&#233;sum&#233;</a></li>
+				<li><a class="circle" href="">&nbsp;&nbsp;Contact</a></li>
+			</ul>
+			<script type="text/javascript">
 
-			//The colors randomly selected for shapes.
-			var colors=["#FF0000", "#FF6100", "#FFb400", 
-				"#00D47C", "#008ED6", "#FE2BD0"]
-			circlelinks(colors);
-			var canvas_ = canvas(colors);
-			circle(canvas_);
-			var polygons_ = polygons(canvas_, coordinates);
-			var paths_ = paths(canvas_, coordinates, polygons_);
-			
-			requestAnimationFrame(paths_.anim);
-		</script>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-		Bottom!
+				//The colors randomly selected for shapes.
+				var colors=["#FF0000", "#FF6100", "#FFb400", 
+					"#00D47C", "#008ED6", "#FE2BD0"]
+				circlelinks(colors);
+				var canvas_ = canvas(colors);
+				circle(canvas_);
+				var polygons_ = polygons(canvas_, coordinates);
+				var paths_ = paths(canvas_, coordinates, polygons_);
+				
+				requestAnimationFrame(paths_.anim);
+			</script>
+			<div id="content">
+
+			</div>
 		</div>
 	</body>
 </html>
