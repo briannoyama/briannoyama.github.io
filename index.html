@@ -7,14 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<title>Brian Noyama: Computer Science Enthusiast</title>
 	</head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script>
-	<script  type="text/javascript" src="./res/coordinates.js"></script>
-	<script  type="text/javascript" src="./res/canvas.js"></script>
-	<script  type="text/javascript" src="./res/polygons.js"></script>
-	<script  type="text/javascript" src="./res/paths.js"></script>
-	<script  type="text/javascript" src="./res/circles.js"></script>
-	<script  type="text/javascript" src="./res/circlelinks.js"></script>
 	<script  type="text/javascript" src="./res/jquery.min.js"></script>
 	<body>
 		<div id="page">
@@ -24,26 +16,13 @@
 				<br/>
 			</div>
 			<ul id="menu">
-				<li><a class="circle" href="">&nbsp;&nbsp;Blog</a></li>
-				<li><a class="circle" href="">&nbsp;&nbsp;About</a></li>
-				<li><a class="circle" href="">&nbsp;&nbsp;R&#233;sum&#233;</a></li>
-				<li><a class="circle" href="">&nbsp;&nbsp;Contact</a></li>
+				<li><a class="circle" href="blog#fade">&nbsp;&nbsp;Blog</a></li>
+				<li><a class="circle" href="about#fade">&nbsp;&nbsp;About</a></li>
+				<li><a class="circle" href="resume#fade">&nbsp;&nbsp;R&#233;sum&#233;</a></li>
+				<li><a class="circle" href="contact#fade">&nbsp;&nbsp;Contact</a></li>
 			</ul>
-			<script type="text/javascript">
-
-				//The colors randomly selected for shapes.
-				var colors=["#FF0000", "#FF6100", "#FFb400", 
-					"#00D47C", "#008ED6", "#FE2BD0"]
-				circlelinks(colors);
-				var canvas_ = canvas(colors);
-				circle(canvas_);
-				var polygons_ = polygons(canvas_, coordinates);
-				var paths_ = paths(canvas_, coordinates, polygons_);
-				
-				requestAnimationFrame(paths_.anim);
-			</script>
+			<script  type="text/javascript" src="./res/noyama.js"></script>
 			<div id="content">
-
 			</div>
 		</div>
 	</body>
