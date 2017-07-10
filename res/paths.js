@@ -5,11 +5,15 @@
 var paths = (function(canvas, coordinates, polygons){
 
 	var cnt = 0;
+	if(!canvas.anim){
+		cnt = 200;
+	}
 	var max_cnt = 200.0;
 
 	var paths = [];
 
 	var svg = canvas.svg;
+	var colors = canvas.colors;
 	var path_pnts = coordinates.path_pnts;
 	
 	var path_pnts_length = path_pnts.length;
@@ -63,7 +67,7 @@ var paths = (function(canvas, coordinates, polygons){
 		if (cnt <= max_cnt){
 			requestAnimationFrame(anim);
 		} else {
-			requestAnimationFrame(polygons.anim);
+			polygons.anim();
 		}
 	
 	}

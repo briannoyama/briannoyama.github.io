@@ -1,11 +1,11 @@
 var circlelinks = (function(colors){
-	var circles = document.getElementsByClassName("circle"); 
+	var circles = document.getElementsByClassName('circle'); 
 	var circles_length = circles.length;
 	for (var i = 0; i < circles_length; i++){
 		hovercircle(circles[i], 2.5, colors);
 	}
 
-	circles = document.getElementsByClassName("largecircle"); 
+	circles = document.getElementsByClassName('largecircle'); 
 	circles_length = circles.length;
 	for (var i = 0; i < circles_length; i++){
 		hovercircle(circles[i], 7.5, colors);

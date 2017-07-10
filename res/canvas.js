@@ -2,7 +2,7 @@
  *Creates the drawing surface (SVG) for the background of an element.
  *
  */
-var canvas = (function(colors){
+var canvas = (function(colors, anim){
 	var window_ = $(window);
 	var body = document.getElementById('page');
 	var title = document.getElementById('title');
@@ -37,6 +37,7 @@ var canvas = (function(colors){
 
 	return {
 		svg : svg,
-		colors : colors
+		colors : colors,
+		anim: anim
 	};
 });

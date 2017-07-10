@@ -4,6 +4,9 @@
  */
 var polygons = (function(canvas, coordinates){
 	var cnt = 0;
+	if(!canvas.anim){
+		cnt = 75;
+	}
 	var max_cnt = 75.0;
 
 	var colors = canvas.colors;
