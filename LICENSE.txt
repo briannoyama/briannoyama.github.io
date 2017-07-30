@@ -1,3 +1,9 @@
+All javascript and blog content related files are licensed by:
+
+Creative Commons Attribution 4.0 International Licensei, whereby the entire license text can be found here: http://creativecommons.org/licenses/by/4.0/
+
+All other content is licensed by:
+
 The MIT License (MIT)
 
 Copyright (c) 2016 Parker Moore

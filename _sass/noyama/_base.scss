@@ -1,7 +1,7 @@
 @font-face { font-family: Gilbert-Color; src: url('Gilbert-Color.otf'); } 
 @font-face { font-family: Gilbert; src: url('Gilbert.otf'); } 
 
-%whiteshadow:after{
+%whiteshadow{
   text-shadow: -1px -1px #FFFFFF, 
                 1px -1px #FFFFFF,
                -1px  1px #FFFFFF,
@@ -67,7 +67,7 @@ div#title{
   font-family: Gilbert;
   font-size: 14vw;
   padding-top:4%;
-  @extend %whiteshadow
+  @extend %whiteshadow;
 }
 
 div#title a{  
