@@ -4,7 +4,7 @@
  */
 var canvas = (function(colors, anim){
 	var window_ = $(window);
-	var body = document.getElementById('page');
+	var body = document.getElementById("page"); 
 	var title = document.getElementById('title');
 	var menu = document.getElementById('menu');
 	//The element that we will put polygons in.
