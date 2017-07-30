@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+image: "fib-origami.png"
 date:   2017-07-09 21:39:58 -0500
 categories: jekyll update
 ---

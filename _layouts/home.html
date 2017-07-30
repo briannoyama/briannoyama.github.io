@@ -15,8 +15,15 @@ layout: default
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}#_">{{ post.title | escape }}</a>
+
+        {% if post.image %}
+        <img class="circle circle-link" src="/assets/blog/{{ post.image }}">
+        {% endif %}
+        <a class="post-link large-circle" href="{{ post.url | relative_url }}#_">
+          &nbsp;&nbsp;{{ post.title | escape }}
+        </a>
         </h2>
+        
       </li>
     {% endfor %}
   </ul>

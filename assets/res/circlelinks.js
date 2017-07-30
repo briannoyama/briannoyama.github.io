@@ -5,10 +5,10 @@ var circlelinks = (function(colors){
 		hovercircle(circles[i], 2.5, colors);
 	}
 
-	circles = document.getElementsByClassName('largecircle'); 
+	circles = document.getElementsByClassName('large-circle'); 
 	circles_length = circles.length;
 	for (var i = 0; i < circles_length; i++){
-		hovercircle(circles[i], 7.5, colors);
+		hovercircle(circles[i], 5, colors);
 	}
 });
 

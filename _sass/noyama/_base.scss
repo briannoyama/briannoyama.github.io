@@ -1,162 +1,33 @@
 @font-face { font-family: Gilbert-Color; src: url('Gilbert-Color.otf'); } 
 @font-face { font-family: Gilbert; src: url('Gilbert.otf'); } 
 
-%whiteshadow{
-  text-shadow: -1px -1px #FFFFFF, 
-                1px -1px #FFFFFF,
-               -1px  1px #FFFFFF,
-                1px  1px #FFFFFF;
-}
-
-
-polygon.fold{
-  opacity: 0.667;
-}
-
-path.fold{
-  opacity: 0.667;
-  stroke-width: 1;
-  fill: none;
-}
-
-circle.fold{
-  fill: #071F4B;
-}
-
-svg.link{
-  position:absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  z-index: -1;
-}
-
-svg#origami{
-  position:absolute;
-  left: 0;
-  top: 0;
-  width: 800px;
-  z-index: -2;
-}
-
-div#page{
-  overflow: hidden;
-  width:100%;
-  min-height:100%;
-        padding-top: 30%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-header{
-  overflow: hidden;
-  width:100%;
-  min-height:100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-div#title{
-  position: relative;
-  left: 0%;
-  width : 100%;
-  text-align: center;
-  color: $brand-color;
-  font-family: Gilbert;
-  font-size: 14vw;
-  padding-top:4%;
-  @extend %whiteshadow;
-}
-
-div#title a{  
-  text-decoration: none;
-}
-
-div#subtitle{
-  font-size: 2.75vw;
-  line-height: 80%;
-  float: right;
-  padding-right: 46%;
-  font-family: Gilbert;
-  display: none;
-}
-
-nav#menu{
-  width:100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-nav#menu ul{
-  position: relative;
-  top: 0;
-  left: 0;
-  list-style-type: none;
+h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin: 0;
   padding: 0;
-  width: 100%;
-  padding-bottom: 10%;
+  padding-bottom: $spacing-unit;
 }
 
-nav#menu li{
-  float: left;
-  padding-left:3%;
-  font-size: 6vw;
+p, ul, ol {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
 }
 
-nav#menu a{
-  display: block;
-  position: relative;
-  left: 0;
-  top: 0;
-  font-family: Gilbert;
-  text-shadow: -1px -1px #FFFFFF, 
-          1px -1px #FFFFFF,
-          -1px 1px #FFFFFF,
-          1px 1px #FFFFFF;
-  text-align: left;
-  padding: 1%; 
+img.circle {
+  border-radius: 50%;
 }
 
-@media screen and (min-width: 600px) {
-  div#title{
-    text-align:left;
-    margin-left:45%;
-    font-family: Gilbert-Color;
-    font-size: 9vw;
-  }
-
-  div#subtitle{
-    display: block;
-  }
-
-  nav#menu ul{
-    margin-left: 45%;
-    width: 55%;
-  }
-
-  nav#menu li{
-    font-size: 3.5vw;
-  }
-
-
-  div#page{
-    padding-top: 20%;
-  }
-
+a.large-circle svg{
+  transform:translateX(-50%);
 }
 
-@media screen and (min-width: 800px) {
-  svg#origami{
-    width: 100%;
-  }
+img.circle-link {
+  position: absolute;
+  top: 12.5%;
+  left: 0%;
+  transform:translateX(-50%);
+  height: 75%;
+  z-index: -1;
 }
-
-
 
 
 /**
@@ -183,8 +54,15 @@ figcaption {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  top: 0px;
+  left: 0px;
   font-weight: $base-font-weight;
+  font-family: Gilbert;
+  @extend %whiteshadow;
 }
+
+
 
 /**
  * Links
@@ -192,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
+  font-family: Gilbert;
 
   &:hover {
     color: $text-color;
@@ -201,6 +80,7 @@ a {
   .social-media-list &:hover {
     text-decoration: none;
   }
+  z-index: 1;
 }
 
 
@@ -246,15 +126,6 @@ pre {
   }
 }
 
-
-/**
- * Wrapper
- */
-.wrapper {
-  padding-right: 15%;
-  padding-left: 15%;
-}
-
 /**
  * Icons
  */
@@ -276,3 +147,4 @@ pre {
     padding-top: 5px;
   }
 }
+

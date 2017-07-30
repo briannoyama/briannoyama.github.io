@@ -1,0 +1,102 @@
+
+polygon.fold{
+  opacity: 0.667;
+}
+
+path.fold{
+  opacity: 0.667;
+  stroke-width: 1;
+  fill: none;
+}
+
+circle.fold{
+  fill: #071F4B;
+}
+
+svg.link{
+  position:absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -2;
+}
+
+a.circle circle{
+  stroke: #FFFFFF;
+  stroke-width: 0.2;
+}
+
+svg#origami{
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: 800px;
+  z-index: -2;
+}
+
+div#title{
+  color: $brand-color;
+  text-align: center;
+  position: relative;
+  padding-top:5%;
+  left: 0%;
+  width : 100%;
+  margin: 0;
+}
+
+div#title h1{
+  font-family: Gilbert;
+  font-size: 14vw;
+  display: inline;
+  line-height: 80%;
+  @extend %whiteshadow;
+}
+
+div#subtitle{
+  font-size: 2.75vw;
+  line-height: 80%;
+  text-align: left;
+  float: right;
+  padding-right: 46%;
+  margin: 0;
+  padding-top: 0;
+  font-family: Gilbert;
+  display: none;
+}
+
+nav#menu{
+  width:100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav#menu ul{
+  position: relative;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+nav#menu li{
+  float: left;
+  padding-left:3%;
+  font-size: 6vw;
+}
+
+nav#menu a{
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  font-family: Gilbert;
+  @extend %whiteshadow;
+  text-align: left;
+  padding: 1%; 
+}
+

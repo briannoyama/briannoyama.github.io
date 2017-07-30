@@ -4,8 +4,8 @@
   {% assign page_paths = site.header_pages | default: default_paths %}
 
   <div id="title">
-    <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    <div id="subtitle"><br/>Computer Science,<br/>Math, Origami, <br/>Economics, &amp; Life. </div>  
+    <a href="{{ "/" | relative_url }}"><h1>{{ site.title | escape }}</h1></a>
+    <div id="subtitle">Computer Science,<br/>Math, Origami, <br/>Economics, &amp; Life. </div>  
   </div>
   {% if page_paths %}
     <nav id="menu" >

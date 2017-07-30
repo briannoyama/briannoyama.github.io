@@ -1,4 +1,6 @@
 var noyama = (function(){
+	var page = $('body');
+
 	var head = $("head");
 	head.append('<script type="text/javascript" src="/assets/res/coordinates.js"></script>');
 	head.append('<script type="text/javascript" src="/assets/res/canvas.js"></script>');
@@ -27,13 +29,14 @@ var noyama = (function(){
 
 	//Fade in if not animating svg.
 	if (!anim){
-		var page = $('body');
-		page.css({'opacity': '0'});
 		$(document).ready(function(){
 			page.animate({
 				opacity: '1'
 			});
 		});
+	} else {
+		page.css({'opacity': '1'});
+
 	}
 	
 	//Fade when leaving page.
@@ -43,11 +46,13 @@ var noyama = (function(){
 		$(links[i]).click(function(event){
 			event.preventDefault();
 			var href = this.href;
-			$('body').animate({
-				opacity: '0'
-			}, 400, function(){
-				window.location = href;
-			});
+                        if (window.location != href.split('#')[0] && window.location != href){
+				$('body').animate({
+					opacity: '0'
+				}, 400, function(){
+					window.location = href;
+				});
+			}
 		});
 	}
 

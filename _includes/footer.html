@@ -1,15 +1,16 @@
+<script  type="text/javascript" src="{{ "/assets/res/noyama.js" | relative_url }}"></script>
 <footer class="site-footer">
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
+    <h1 class="footer-heading">{{ site.title | escape }}</h1>
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>
             {% if site.author %}
-              {{ site.author | escape }}
+              &copy;{{ site.author | escape }}
             {% else %}
               {{ site.title | escape }}
             {% endif %}
@@ -46,6 +47,4 @@
 
   </div>
   
-  <script  type="text/javascript" src="{{ "/assets/res/jquery.min.js" | relative_url }}"></script>
-  <script  type="text/javascript" src="{{ "/assets/res/noyama.js" | relative_url }}"></script>
 </footer>
