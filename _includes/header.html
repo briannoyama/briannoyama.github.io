@@ -3,7 +3,7 @@
   {% assign default_paths = site.pages | map: "path" %}
   {% assign page_paths = site.header_pages | default: default_paths %}
 
-  <div id="title">
+  <div id="title" class="social-media-list">
     <a href="{{ "/" | relative_url }}"><h1>{{ site.title | escape }}</h1></a>
     <div id="subtitle">Computer Science,<br/>Math, Origami, <br/>Economics, &amp; Life. </div>  
   </div>
