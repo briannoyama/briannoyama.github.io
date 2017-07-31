@@ -84,11 +84,13 @@ div.wrapper {
 ul.post-list {
   margin-left: 0;
   list-style: none;
+  margin-bottom: $spacing-unit;
 }
 
 ul.post-list li {
   padding-left: 0;
   margin-left: 0;
+  margin-bottom: $spacing-unit;
 }
 
 div.post-description{
@@ -96,7 +98,7 @@ div.post-description{
   position: absolute; 
   top:66%; 
   left: 0;
-  padding-left: $spacing-unit;
+  padding-left: 2*$spacing-unit;
   color: $grey-color;
   top: 0 px;
   left: 0px;

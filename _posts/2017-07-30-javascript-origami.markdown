@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Animating Origami"
 image: "fib-origami.png"
-excerpt: "This is a small summary of the post."
-date:   2017-07-09 21:39:58 -0500
+excerpt: "Using Javascipt and SVGs to animate an origami themed"
+date:   2017-07-30
 categories: jekyll update
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

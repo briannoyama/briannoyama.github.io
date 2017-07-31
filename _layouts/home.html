@@ -21,7 +21,7 @@ layout: default
           &nbsp;&nbsp;{{ post.title | escape }}
         </a>
         <div class="post-description">
-	<div class="post-meta">{{ post.date | date: date_format }}</div>
+	<div class="post-meta"><p>{{ post.date | date: date_format }}</p></div>
         {% if post.excerpt %}
           <p>{{ post.excerpt }}</p>
         {% endif %}
