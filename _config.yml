@@ -18,7 +18,7 @@ author: Brian T Noyama
 email: TODO@domain.com
 description: > 
   Brian Noyama's thoughts and findings for fellow enthusiasts of Computer Science, Math, 
-  Economics, Origami and anything interesting.
+  Economics, Origami and anything interesting
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  briannoyama

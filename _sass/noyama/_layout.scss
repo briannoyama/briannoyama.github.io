@@ -22,6 +22,7 @@ div.footer-col{
   float: left;
   padding: 0px;
   margin:0px;
+  padding-bottom: $spacing-unit;
 }  
 
 h1.footer-heading{
@@ -80,43 +81,60 @@ div.wrapper {
   @include relative-font-size(1.25);
 }
 
-.post-list {
+ul.post-list {
   margin-left: 0;
   list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
 }
 
-.post-meta {
+ul.post-list li {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+div.post-description{
   font-size: $small-font-size;
+  position: absolute; 
+  top:66%; 
+  left: 0;
+  padding-left: $spacing-unit;
   color: $grey-color;
+  top: 0 px;
+  left: 0px;
+  margin:0px;
+  text-shadow: none;
 }
 
-.post-link {
+
+a.post-link {
   padding-top: $spacing-unit;
   padding-left: $spacing-unit;
   display: block;
   @include relative-font-size(1.5);
 }
 
-
+p.post-meta {
+  color: $grey-color;
+  font-size: $small-font-size;
+  padding-bottom: $spacing-unit;
+}
 
 /**
  * Posts
  */
-.post-header {
-  margin-bottom: $spacing-unit;
+h2.post-header {
+  padding-bottom: $spacing-unit;
 }
 
-.post-title {
+h1.post-title {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  max-height: 300px;
   @include relative-font-size(2.625);
-  letter-spacing: -1px;
   line-height: 1;
+  text-align: center;
 }
 
-.post-content {
+div.post-content {
   margin-bottom: $spacing-unit;
 
   h2 {
@@ -129,5 +147,10 @@ div.wrapper {
 
   h4 {
     @include relative-font-size(1.25);
+  }
+
+  p {
+    padding-top: $spacing-unit/2;
+    padding-bottom: $spacing-unit/2;
   }
 }

@@ -4,8 +4,9 @@
 h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin: 0;
   padding: 0;
-  padding-bottom: $spacing-unit;
+  padding-bottom: 0;
 }
+
 
 p, ul, ol {
   font-family: $base-font-family;
@@ -26,6 +27,15 @@ img.circle-link {
   left: 0%;
   transform:translateX(-50%);
   height: 75%;
+  z-index: -1;
+}
+
+img.circle-head {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform:translateX(-50%);
+  height: 100%;
   z-index: -1;
 }
 
@@ -129,7 +139,7 @@ pre {
 /**
  * Icons
  */
-.icon > svg {
+div.icon > svg {
   display: inline-block;
   vertical-align: middle;
 
@@ -138,7 +148,7 @@ pre {
   }
 }
 
-.social-media-list {
+ul.social-media-list {
   .icon {
     padding-right: 5px;
   }

@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1>Posts</h1>
+  <h1>Blog</h1>
   
   {{ content }}
 
@@ -12,22 +12,26 @@ layout: default
     {% for post in site.posts %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-
+        <h2 class="post-header">
+        
         {% if post.image %}
         <img class="circle circle-link" src="/assets/blog/{{ post.image }}">
         {% endif %}
         <a class="post-link large-circle" href="{{ post.url | relative_url }}#_">
           &nbsp;&nbsp;{{ post.title | escape }}
         </a>
+        <div class="post-description">
+	<div class="post-meta">{{ post.date | date: date_format }}</div>
+        {% if post.excerpt %}
+          <p>{{ post.excerpt }}</p>
+        {% endif %}
+        </div>
         </h2>
         
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
