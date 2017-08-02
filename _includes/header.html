@@ -5,7 +5,7 @@
 
   <div id="title" class="social-media-list">
     <a href="{{ "/" | relative_url }}"><h1>{{ site.title | escape }}</h1></a>
-    <div id="subtitle">Computer Science,<br/>Math, Origami, <br/>Economics, &amp; Life. </div>  
+    <div id="subtitle">Computer Science,<br/>Math, Games, <br/>Art, &amp; Everything. </div>  
   </div>
   {% if page_paths %}
     <nav id="menu" >
@@ -20,3 +20,12 @@
     </nav>
   {% endif %}
 </header>
+
+<!--Code for formatting images into rotated squares.-->
+<svg width="0" height="0">
+  <defs>
+    <clipPath id="square" clipPathUnits="objectBoundingBox">
+      <polygon points="0.1 0 1 0.1 0.9 1 0 0.9"/>
+    </clipPath>
+  </defs>
+</svg>

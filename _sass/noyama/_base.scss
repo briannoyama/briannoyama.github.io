@@ -42,30 +42,31 @@ img.circle-head {
   z-index: -1;
 }
 
+figure.small {
+  width: 30%;
+}
 
-/**
- * Images
- */
 img {
   max-width: 100%;
   vertical-align: middle;
 }
 
-/**
- * Figures
- */
+img.clip {
+  clip-path: url(#square);
+}
+
+
 figure > img {
   display: block;
 }
 
 figcaption {
+  font-family: $base-font-family;
   font-size: $small-font-size;
+  text-align: center;
 }
 
 
-/**
- * Headings
- */
 h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 0px;
@@ -76,10 +77,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-/**
- * Links
- */
 a {
   color: $brand-color;
   text-decoration: none;
@@ -97,9 +94,6 @@ a {
 }
 
 
-/**
- * Blockquotes
- */
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
@@ -113,10 +107,6 @@ blockquote {
 }
 
 
-
-/**
- * Code formatting
- */
 pre,
 code {
   border: 1px solid $grey-color-light;
@@ -139,9 +129,7 @@ pre {
   }
 }
 
-/**
- * Icons
- */
+
 div.icon > svg {
   display: inline-block;
   vertical-align: middle;

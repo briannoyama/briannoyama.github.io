@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $on-palm) {
   div#title{
     margin-left:45%;
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $on-laptop) {
   svg#origami{
     width: 100%;
   }

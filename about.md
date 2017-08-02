@@ -9,7 +9,12 @@ permalink: /about/
 
 As a recovering lurker, I have come to appreciate the thoughts and ideas that emerge from personal blogs and online communities. I love to read, and I hate to comment. Somehow I have avoided getting a Twitter account. As to where I inherited my aversion to sharing, I have no idea. But no one lives on an island, and no developer starts anything completely from scratch. We all rely on the internet and each other to build better and better things. I think blogs are *really* cool, and I know I have some cool things to share of my own. Thus, as part of my recovery, I dedicate this space as a smodge-podge of all things nerdy and interesting, in particular:
 
-
+<figure class="small">
+<img class="clip" src="/assets/images/oct-shadow.jpg" alt="Octagon Shadow fold I made for my partner"/>
+<figcaption>
+Art
+</figcaption>
+</figure>
 
 ## ...the Author
 ---

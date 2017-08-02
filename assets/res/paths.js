@@ -17,18 +17,14 @@ var paths = (function(canvas, coordinates, polygons){
   var path_pnts = coordinates.path_pnts;
   
   var path_pnts_length = path_pnts.length;
-
+  
   for (var i = 0; i < path_pnts_length; i++){
     paths[i] = document.createElementNS(svg.namespaceURI, 'path');
     paths[i].setAttribute('stroke', '' + colors[path_pnts[i][2]]); 
-    paths[i].setAttribute('class', 'fold');  
-    var diff = (max_cnt - cnt) * (max_cnt - cnt) * (max_cnt - cnt) / (max_cnt * max_cnt);
-    var off = paths[i].getTotalLength() * diff/max_cnt;
-    var on = paths[i].getTotalLength() * (max_cnt - diff)/max_cnt;
-    paths[i].setAttribute('stroke-dasharray', "0," + off + "," + on); 
-    svg.appendChild(paths[i]);
+    paths[i].setAttribute('class', 'fold');
+    paths[i].setAttribute('stroke-dasharray', "4," + 0 + "," + 4); 
   }
-
+  
   paths[0].setAttribute('d', 'M -17.5 16 q 0 0.5 -0.5 1 q -0.5 0.5 -0.5 1 ' + 
       'l 0 299'); 
   paths[1].setAttribute('d', 'M -16 13.5 q 0.5 0 0.5 0.5 l 0 2 q 0 0.5 ' +
@@ -57,6 +53,10 @@ var paths = (function(canvas, coordinates, polygons){
       '-0.5 1 -0.5 l 42.5 0 q 1 0 1 -1'); 
   paths[13].setAttribute('d', 'M 20 -14.5 l 47 0 q 0.5 0 0.5 -0.5'); 
 
+  for (var i = 0; i < path_pnts_length; i++){
+    paths[i].setAttribute('stroke-dasharray', "0, 1"); 
+    svg.appendChild(paths[i]);
+  }
 
   function anim(){
     for (var i = 0; i < path_pnts_length; i++){
