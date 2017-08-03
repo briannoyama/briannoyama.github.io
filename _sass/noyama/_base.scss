@@ -42,8 +42,30 @@ img.circle-head {
   z-index: -1;
 }
 
+figure {
+  margin: 0;
+}
+
+
 figure.small {
-  width: 30%;
+  width: 50%;
+  float: right;
+}
+
+hr {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  border-width: 2px 0 0 0;
+  border-color: $grey-color-light;
+  position: relative;
+  top: -8px;
+}
+
+
+figure.large {
+  width: 100%;
+  float: right;
 }
 
 img {
@@ -51,8 +73,13 @@ img {
   vertical-align: middle;
 }
 
-img.clip {
-  clip-path: url(#square);
+img.clipleft {
+  clip-path: url(#squarel);
+}
+
+
+img.clipright {
+  clip-path: url(#squarer);
 }
 
 

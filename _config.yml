@@ -19,8 +19,8 @@ email: brian@noyama-dev.com
 description: > 
   Brian Noyama's thoughts and findings for fellow enthusiasts of Computer Science, Math, 
   Games, Art and Everything interesting
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: https://www.noyama-dev.com
 github_username:  briannoyama
 linkedin_username:  briannoyama
 
