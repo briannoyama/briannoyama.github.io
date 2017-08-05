@@ -16,11 +16,10 @@ $background-color: #f5f5f5 !default;
 $brand-color:      #071F4B !default;
 
 %whiteshadow{
-  color: $brand-color;
-  text-shadow: -1px -1px #FFFFFF, 
-                1px -1px #FFFFFF,
-               -1px  1px #FFFFFF,
-                1px  1px #FFFFFF;
+  text-shadow: -1px -1px $background-color, 
+                1px -1px $background-color,
+               -1px  1px $background-color,
+                1px  1px $background-color;
 }
 
 $grey-color:       #757575 !default;

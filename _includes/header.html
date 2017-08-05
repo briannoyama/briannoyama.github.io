@@ -4,7 +4,7 @@
   {% assign page_paths = site.header_pages | default: default_paths %}
 
   <div id="title" class="social-media-list">
-    <a href="{{ "/" | relative_url }}"><h1>{{ site.title | escape }}</h1></a>
+    <a class="nav" href="{{ "/" | relative_url }}"><h1>{{ site.title | escape }}</h1></a>
     <div id="subtitle">Computer Science,<br/>Math, Games, <br/>Art, &amp; Everything. </div>  
   </div>
   {% if page_paths %}
@@ -13,7 +13,7 @@
         {% for path in page_paths %}
           {% assign my_page = site.pages | where: "path", path | first %}
           {% if my_page.title %}
-            <li><a class="circle" href="{{my_page.permalink}}#_">&nbsp;&nbsp;{{ my_page.title | escape }}</a></li>
+            <li><a class="circle nav" href="{{my_page.permalink}}#_">&nbsp;&nbsp;{{ my_page.title | escape }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>

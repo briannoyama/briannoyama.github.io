@@ -7,8 +7,14 @@ permalink: /about/
 ## ...the Site
 ---
 
-As a recovering lurker, I have come to appreciate the thoughts and ideas that emerge from personal blogs and online communities. I love to read, and I hate to comment. Somehow I have avoided getting a Twitter account. As to where I inherited my aversion to sharing, I have no idea. But no one lives on an island, and no developer starts anything completely from scratch. We all rely on the internet and each other to build better and better things. I think blogs are *really* cool, and I know I have some cool things to share of my own. Thus, as part of my recovery, I dedicate this space as a smodge-podge of all things nerdy and interesting, in particular:
+<p class="first">As a recovering lurker, I have come to appreciate the thoughts and ideas that emerge from personal blogs and online communities. I love to read, and I hate to comment. Somehow I have avoided getting a Twitter account. As to where I inherited my aversion to sharing, I have no idea. But no one lives on an island, and no developer starts anything completely from scratch. We all rely on the internet and each other to build better and better things. I think blogs are *really* cool, and I know I have some cool things to share of my own. Thus, as part of my recovery, I dedicate this space as a smodge-podge of all things nerdy and interesting, in particular:</p>
 
+<script type="text/javascript" src="{{ "/assets/res/noyama_topics.js" | relative_url }}"></script>
+<script type="text/javascript">
+  topics('[{"url": "/assets/images/oct-shadow.jpg", "desc":"Origami"}, {"url": "/assets/images/masters-icon.png", "desc":"Origami"}, {"url": "/assets/images/path-find.png", "desc":"Origami"}]'); 
+</script>
+
+<noscript>
 <figure class="small">
 <img class="clipleft" src="/assets/images/path-find.png" title="Path finding algorithm I used in a HW assignment for my students in an Intro to OO Course"/>
 <figcaption>
@@ -36,6 +42,7 @@ Comp Sci
 Math
 </figcaption>
 </figure>
+</noscript>
 
 
 ## ...the Author

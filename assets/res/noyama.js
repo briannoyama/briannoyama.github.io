@@ -3,7 +3,7 @@ var noyama = (function(){
   page.css({'opacity':'0'});
 
   var head = $("head");
-  head.append('<script type="text/javascript" src="/assets/res/coordinates.js"></script>');
+  head.append('<script type="text/javascript" src="/assets/res/polys_coors.js"></script>');
   head.append('<script type="text/javascript" src="/assets/res/canvas.js"></script>');
   head.append('<script type="text/javascript" src="/assets/res/polygons.js"></script>');
   head.append('<script type="text/javascript" src="/assets/res/paths.js"></script>');
@@ -43,17 +43,20 @@ var noyama = (function(){
   var links = document.getElementsByTagName("a"); 
   var links_length = links.length;
   for (var i = 0; i < links_length; i++){
-    $(links[i]).click(function(event){
-      event.preventDefault();
-      var href = this.href;
-                        if (window.location != href.split('#')[0] && window.location != href){
-        page.animate({
-          opacity: '0'
-        }, 400, function(){
-          window.location = href;
-        });
-      }
-    });
+    var class_ = links[i].getAttribute("class");
+    if (class_ != null && class_.indexOf('nav')!=-1){
+      $(links[i]).click(function(event){
+        event.preventDefault();
+        var href = this.href;
+        if (window.location != href.split('#')[0] && window.location != href){
+          page.animate({
+              opacity: '0'
+            }, 400, function(){
+              window.location = href;
+          });
+        }
+      });
+    }
   }
 
 })();

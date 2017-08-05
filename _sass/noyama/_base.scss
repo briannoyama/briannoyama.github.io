@@ -16,6 +16,10 @@ p, ul, ol {
   font-size: $base-font-size;
 }
 
+p.first {
+  @extend %whiteshadow;
+}
+
 img.circle {
   border-radius: 50%;
 }
@@ -95,6 +99,7 @@ figcaption {
 
 
 h1, h2, h3, h4, h5, h6 {
+  color: $brand-color;
   position: relative;
   top: 0px;
   left: 0px;
@@ -154,6 +159,11 @@ pre {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+svg.topics {
+  width: 100%;
+  #background-color: blue;
 }
 
 
