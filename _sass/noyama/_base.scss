@@ -72,6 +72,10 @@ figure.large {
   float: right;
 }
 
+figure.full {
+  width: 100%;
+}
+
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -95,6 +99,16 @@ figcaption {
   font-family: $base-font-family;
   font-size: $small-font-size;
   text-align: center;
+}
+
+figcaption.topics {
+  font-family: Gilbert;
+  color: $brand-color;
+  font-weight: $base-font-weight;
+  font-size: 1.5em;
+  min-font-size: 1.5em;
+  font-family: Gilbert;
+  @extend %whiteshadow;
 }
 
 

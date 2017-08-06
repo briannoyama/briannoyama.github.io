@@ -9,6 +9,9 @@ var topics = (function(img_json){
   var script = document.getElementsByTagName('script');
   script = script[script.length - 1];
 
+  var fig_capt = document.createElement('figcaption');
+  fig_capt.setAttribute('class', 'topics');
+  
   var img_object = JSON.parse(img_json);
   var img_object_len = img_object.length;  
 
@@ -28,6 +31,8 @@ var topics = (function(img_json){
         animating = true;
         anim();
       }
+      fig_capt.innerHTML = '';
+      fig_capt.append(document.createTextNode(squares[i].desc));
       return false;
     }
     return true;
@@ -38,6 +43,8 @@ var topics = (function(img_json){
     squares[i] = moving_sq(i, img_object[i], svg, update);
   }
 
+  fig_capt.append(document.createTextNode(squares[0].desc));
+  script.parentNode.appendChild(fig_capt);
   script.parentNode.appendChild(svg);
 
   var animating = false;
@@ -113,7 +120,8 @@ var moving_sq = (function(i, img_, svg, update){
   }
 
   return {
-    anim : anim
+    anim : anim,
+    desc : img_.desc
   }
 
 });
