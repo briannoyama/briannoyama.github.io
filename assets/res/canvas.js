@@ -24,9 +24,9 @@ var canvas = (function(colors, anim){
     }
 
     if (w_offset > title.offsetHeight){
-      menu.setAttribute('style','position: fixed; background:linear-gradient(#FFFFFFFF, #FFFFFF00);');
+      menu.setAttribute('style','position: fixed;');
     } else {
-      menu.setAttribute('style','position: relative; background: auto;');
+      menu.setAttribute('style','position: relative;');
     }
 
   });

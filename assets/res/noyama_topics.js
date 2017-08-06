@@ -20,40 +20,101 @@ var topics = (function(img_json){
   svg.setAttribute('viewBox', t_coors.dimensions[img_object_len - 1]);
   svg.setAttribute('class','topics');
 
-  var positions = t_coors.positions;
-  var squares = t_coors.squares;
-
-  var squares_len = squares.length;
-  for (var i = 0; i < img_object_len; i++){
-    square = document.createElementNS(svg.namespaceURI, 'clipPath');
-    square.setAttribute('id', 'shift_sq_' + i);
-    square.setAttribute('clipPathUnits', 'objectBoundingBox');
-    var shape = document.createElementNS(svg.namespaceURI, 'polygon');
-    shape.setAttribute('points', squares[positions[i][1]][0].join());
-    square.append(shape);
-    svg.append(square);
-    
-    link = document.createElementNS(svg.namespaceURI, 'a');
-    link.onclick = function(){
-      alert('test');    
+  function update(i){
+    if (current != i){
+      current = i;
+      counter = 0;
+      if (!animating){
+        animating = true;
+        anim();
+      }
       return false;
     }
+    return true;
+  }
 
-    image = document.createElementNS(svg.namespaceURI, 'image');
-    image.setAttribute('width', squares[positions[i][1]][1]);
-    image.setAttribute('height', squares[positions[i][1]][1]);
-    image.setAttribute('x', positions[i][0][0]);
-    image.setAttribute('y', positions[i][0][1]);
-    image.setAttributeNS(xlink, 'href', img_object[i].url);
-    image.setAttribute('title', img_object[i].desc);
-    image.setAttribute('clip-path', 'url(#shift_sq_' + i + ')');
-    title = document.createElementNS(svg.namespaceURI, 'title');
-    title.append(document.createTextNode(img_object[i].desc));
-    image.append(title);
-    link.append(image);
-    svg.append(link);
+  var squares = [];
+  for (var i = 0; i < img_object_len; i++){
+    squares[i] = moving_sq(i, img_object[i], svg, update);
   }
 
   script.parentNode.appendChild(svg);
+
+  var animating = false;
+  var current = 0;
+  var counter = 49;
+  var max_cnt = 50.0;
+
+  function anim(){
+    var den = max_cnt - counter;
+    for (var i = 0; i < img_object_len; i++){
+      var index = (i + img_object_len - current) % img_object_len;
+      squares[i].anim(index, den);  
+    }
+
+    counter += 1;
+    if (counter < max_cnt){
+      requestAnimationFrame(anim);
+    } else {
+      animating = false;
+    }
+  }
+  
+  anim();
+});
+
+var moving_sq = (function(i, img_, svg, update){
+    
+  var positions = t_coors.positions;
+  var squares = t_coors.squares;
+
+  var coors = [squares[positions[i][1]][0].slice(),
+               squares[positions[i][1]][1],
+               positions[i][0][0],positions[i][0][1]];
+
+  var square = document.createElementNS(svg.namespaceURI, 'clipPath');
+  square.setAttribute('id', 'shift_sq_' + i);
+  square.setAttribute('clipPathUnits', 'objectBoundingBox');
+  var shape = document.createElementNS(svg.namespaceURI, 'polygon');
+  square.append(shape);
+  svg.append(square);
+    
+  var link = document.createElementNS(svg.namespaceURI, 'a');
+  link.onclick = (function(){
+    return update(i);
+  });
+  link.setAttribute('href', img_.url);
+  link.setAttribute('target', '_blank');
+  
+  var image = document.createElementNS(svg.namespaceURI, 'image');
+  image.setAttributeNS(xlink, 'href', img_.url);
+  image.setAttribute('clip-path', 'url(#shift_sq_' + i + ')');
+  var title = document.createElementNS(svg.namespaceURI, 'title');
+  title.append(document.createTextNode(img_.desc));
+  image.append(title);
+  link.append(image);
+  svg.append(link);
+
+  function anim(index, den){
+    for (var j = 0; j < 8; j++){
+      var prev = coors[0][j] * (den - 1)/den;
+      var next = squares[positions[index][1]][0][j]/den;
+      coors[0][j] = coors[0][j] * (den - 1)/den + 
+                            squares[positions[index][1]][0][j]/den;
+    }
+    coors[1] = coors[1] * (den - 1)/den + squares[positions[index][1]][1]/den;
+    coors[2] = coors[2] * (den - 1)/den + positions[index][0][0]/den;
+    coors[3] = coors[3] * (den - 1)/den + positions[index][0][1]/den;
+    shape.setAttribute('points', coors[0].join());
+    image.setAttribute('width', coors[1]);
+    image.setAttribute('height', coors[1]);
+    image.setAttribute('x', coors[2]);
+    image.setAttribute('y', coors[3]);
+  }
+
+  return {
+    anim : anim
+  }
+
 });
 

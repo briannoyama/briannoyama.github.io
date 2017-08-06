@@ -11,7 +11,7 @@ permalink: /about/
 
 <script type="text/javascript" src="{{ "/assets/res/noyama_topics.js" | relative_url }}"></script>
 <script type="text/javascript">
-  topics('[{"url": "/assets/images/oct-shadow.jpg", "desc":"Origami"}, {"url": "/assets/images/masters-icon.png", "desc":"Origami"}, {"url": "/assets/images/path-find.png", "desc":"Origami"}]'); 
+  topics('[{"url": "/assets/images/oct-shadow.jpg", "desc":"Origami"}, {"url": "/assets/images/pdg-sim.png", "desc":"Computer Science"}, {"url": "/assets/images/snake.png", "desc":"Games (and Development)"}, {"url": "/assets/images/ctl-proof.png", "desc":"Mathematics"}, {"url": "/assets/images/gangwha.jpg", "desc":"Everything Else"}]'); 
 </script>
 
 <noscript>

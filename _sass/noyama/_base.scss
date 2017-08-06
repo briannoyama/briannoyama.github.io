@@ -163,7 +163,9 @@ pre {
 
 svg.topics {
   width: 100%;
-  #background-color: blue;
+  a {
+    outline: none;
+  }
 }
 
 
