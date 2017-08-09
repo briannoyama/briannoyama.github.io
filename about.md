@@ -7,7 +7,7 @@ permalink: /about/
 ## ...the Site
 ---
 
-<p class="first">As a recovering lurker, I have come to appreciate the thoughts and ideas that emerge from personal blogs and online communities. I love to read, and I hate to comment. Somehow I have avoided getting a Twitter account. As to where I inherited my aversion to sharing, I have no idea. But no one lives on an island, and no developer starts anything completely from scratch. We all rely on the internet and each other to build better and better things. I think blogs are *really* cool, and I know I have some cool things to share of my own. Thus, as part of my recovery, I dedicate this space as a smodge-podge of all things nerdy and interesting, in particular:</p>
+<p class="first">As a recovering lurker, I have come to appreciate the thoughts and ideas that emerge from personal blogs and online communities. I love to read, and I hate to comment. Somehow I have avoided getting a Twitter account. As to where I inherited my aversion to sharing, I have no idea. But no one lives on an island, and no developer starts anything completely from scratch. We all rely on the internet and each other to build better and better things. I think blogs are *really* cool, and I know I have some cool things to share of my own. Thus, as part of my recovery, I dedicate this space as a smodge-podge of all things nerdy and interesting, in particular (you can click the images below):</p>
 
 <script type="text/javascript" src="{{ "/assets/res/noyama_topics.js" | relative_url }}"></script>
 
@@ -19,7 +19,7 @@ permalink: /about/
 
 <noscript>
 <figure class="small">
-<img class="clipleft" src="/assets/images/path-find.png" title="Path finding algorithm I used in a HW assignment for my students in an Intro to OO Course"/>
+<img class="clipleft" src="/assets/images/snake.png" title="Screen shot of a snake game I made for my students in an Intro to OO Course"/>
 <figcaption>
 Games
 </figcaption>
@@ -33,14 +33,14 @@ Art
 </figure>
 
 <figure class="small">
-<img class="clipleft" src="/assets/images/masters-icon.png" title="Work I did on DNA Origami for my Master's thesis"/>
+<img class="clipleft" src="/assets/images/pdg-sim.png" title="Work I did with Cellular Automata (CA) for my Undergraduate thesis"/>
 <figcaption>
 Comp Sci
 </figcaption>
 </figure>
 
 <figure class="small">
-<img class="clipright" src="/assets/images/markov-clip.png" title="Explanation of Continuous Time Markov Chains"/>
+<img class="clipright" src="/assets/images/ctl-proof.png" title="A proof for operators in Computation Tree Logic (CTL)"/>
 <figcaption>
 Math
 </figcaption>
@@ -60,7 +60,7 @@ brian
 
 
 
-So simple! So profound! I have a masters in Computer Science, two B.S. degrees in Computer Science and Mathematics and a minor in Women's Studies. I graduated from Iowa State University in 2016 and Regis University in May of 2013. 
+So simple! So profound! I have a master's in Computer Science, two bachelors' in Computer Science and Mathematics and a minor in Women's Studies. I graduated from Iowa State University in May of 2016 and Regis University in May of 2013. 
 
 <figure class="large">
 <img class="clipleft" src="/assets/images/briannoyama.jpg" title="One of my favorite memories at a Lantern Festival in South Korea"/>

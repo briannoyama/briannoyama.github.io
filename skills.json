@@ -1,0 +1,56 @@
+[
+{type: Training/Mentoring/Teaching
+ amnt:
+ desc: ""},
+{type: Statistics/Classifiers
+ amnt:
+ desc: ""},
+{type: Machine Learning
+ amnt:
+ desc: ""},
+{type: Natural Language Processing
+ amnt:
+ desc: ""},
+{type: Bioinformatics/Dynamic Prog.
+ amnt:
+ desc: ""},
+{type: Design Patterns/Architecture
+ amnt:
+ desc: ""},
+{type: RDBS Design
+ amnt:
+ desc: ""},
+{type: Technical Writing/Publishing
+ amnt:
+ desc: ""},
+{type: Java
+ amnt:
+ desc: ""},
+{type: Python
+ amnt:
+ desc: ""},
+{type: LaTeX
+ amnt:
+ desc: ""},
+{type: Javascript/JQuery
+ amnt:
+ desc: ""},
+{type: CSS/SASS
+ amnt:
+ desc: ""},
+{type: PostgreSQL
+ amnt:
+ desc: ""},
+{type: Linux/Bash/Shell
+ amnt:
+ desc: ""},
+{type: AWS/Cloud
+ amnt:
+ desc: ""},
+{type: Git
+ amnt:
+ desc: ""},
+{type: C/C++
+ amnt:
+ desc: ""}
+]

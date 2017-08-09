@@ -15,7 +15,7 @@ var topics = (function(img_json){
   var img_object = JSON.parse(img_json);
   var img_object_len = img_object.length;  
 
-  xlink = 'http://www.w3.org/1999/xlink';
+  var xlink = 'http://www.w3.org/1999/xlink';
   var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('xmlns:xlink', xlink);
   
@@ -40,7 +40,7 @@ var topics = (function(img_json){
 
   var squares = [];
   for (var i = 0; i < img_object_len; i++){
-    squares[i] = moving_sq(i, img_object[i], svg, update);
+    squares[i] = moving_sq(i, img_object[i], svg, update, xlink);
   }
 
   fig_capt.append(document.createTextNode(squares[0].desc));
@@ -70,7 +70,7 @@ var topics = (function(img_json){
   anim();
 });
 
-var moving_sq = (function(i, img_, svg, update){
+var moving_sq = (function(i, img_, svg, update, xlink){
     
   var positions = t_coors.positions;
   var squares = t_coors.squares;
