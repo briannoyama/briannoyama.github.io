@@ -1,18 +1,16 @@
 var head = $("head");
 head.append('<script type="text/javascript" src="/assets/res/topics_coors.js"></script>');
 var t_coors = topics_coors();
+ 
+
 /*
  *A cool animation for groups of pics.
  */
-var topics = (function(img_json){
+var topics = (function(img_object, script){
   
-  var script = document.getElementsByTagName('script');
-  script = script[script.length - 1];
-
   var fig_capt = document.createElement('figcaption');
   fig_capt.setAttribute('class', 'topics');
   
-  var img_object = JSON.parse(img_json);
   var img_object_len = img_object.length;  
 
   var xlink = 'http://www.w3.org/1999/xlink';
@@ -97,7 +95,7 @@ var moving_sq = (function(i, img_, svg, update, xlink){
   image.setAttributeNS(xlink, 'href', img_.url);
   image.setAttribute('clip-path', 'url(#shift_sq_' + i + ')');
   var title = document.createElementNS(svg.namespaceURI, 'title');
-  title.append(document.createTextNode(img_.desc));
+  title.append(document.createTextNode(img_.title));
   image.append(title);
   link.append(image);
   svg.append(link);

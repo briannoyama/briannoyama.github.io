@@ -2,7 +2,6 @@ var noyama = (function(){
 
   $(document).ready(function() {
     var page = $('body');
-    page.css({'opacity':'0'});
     var head = $("head");
     head.append('<script type="text/javascript" src="/assets/res/polys_coors.js"></script>');
     head.append('<script type="text/javascript" src="/assets/res/canvas.js"></script>');
@@ -59,4 +58,11 @@ var noyama = (function(){
     }
   });
 })();
+
+var load_here = (function(json, func){
+  var script = document.getElementsByTagName('script');
+  script = script[script.length - 1];
+  $.getJSON(json, function(obj){func(obj, script);});
+});
+
 

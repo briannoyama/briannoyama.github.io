@@ -1,0 +1,17 @@
+[
+{"url": "/assets/images/oct-shadow.jpg", 
+ "desc":"Art (Origami)", 
+ "title":"Octagon Shadow fold Origami that I made for my partner"},
+{"url": "/assets/images/pdg-sim.png", 
+ "desc":"Computer Science", 
+ "title":"Work I did with Cellular Automata (CA) for my Undergraduate thesis"}, 
+{"url": "/assets/images/snake.png", 
+ "desc":"Games (and Development)", 
+ "title":"Screen shot of a snake game I made for my students in an Intro to OO Course"}, 
+{"url": "/assets/images/ctl-proof.png", 
+ "desc":"Mathematics", 
+ "title":"A proof for operators in Computation Tree Logic (CTL)"}, 
+{"url": "/assets/images/gangwha.jpg", 
+ "desc":"Everything Else", 
+ "title":"Hanging out on Ganghwa Island"}
+]

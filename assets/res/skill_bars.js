@@ -1,21 +1,16 @@
 /*
  * 
  */
-var skill_bars = (function(skills_json){
-  var script = document.getElementsByTagName('script');
-  script = script[script.length - 1];
-
+var skill_bars = (function(skill_obj, script){
+  var skills = skill_obj.skills;
   var ul = document.createElement('ul');
   ul.setAttribute('class', 'skills');
 
-  var skills = JSON.parse(skills_json);
   var skills_len = skills.length;
 
-  var display_window = document.createElementNS('div');
-  display_window.setAttribute('class', 'skill-display');
-  var stat_window = document.createElementNS('div');
-  stat_window.setAttribute('class', 'skills');
-
+  var display_window = document.getElementById(skill_obj.display);
+  //display_window.setAttribute('class', 'skill-display');
+  
   skill_bars=[]
   for (var i = 0; i < skills_len; i++){
     var skill_bar = bar(skills[i], display_window);
@@ -23,9 +18,7 @@ var skill_bars = (function(skills_json){
     skill_bars[i] = skill_bar.bar;
   }
 
-  stat_window.append(ul);
-  script.parentNode.appendChild(display_window);
-  script.parentNode.appendChild(stat_window);
+  script.parentNode.appendChild(ul);
   
   var count = 0;
   var max_cnt = 50.0;
@@ -58,7 +51,7 @@ var bar = (function(skill_obj, display_window){
   svg.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
   svg.setAttribute('viewBox', '0 -0.5 10 1');
   var bar = document.createElementNS(svg.namespaceURI, 'path');
-  skill.setAttribute('d','0 -0.1 '+10*skill_obj.amnt+' 0');
+  bar.setAttribute('d','0 -0.1 '+10*skill_obj.amnt+' 0');
   var background = document.createElementNS(svg.namespaceURI, 'path');
   background.setAttribute('d','0 0 10 0');
   svg.append(background);

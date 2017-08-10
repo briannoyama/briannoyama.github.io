@@ -1,0 +1,29 @@
+{
+  "display":"work-history",
+  "skills":[
+  {"type": "Training/Mentoring/Teaching",
+   "amnt": 0.9,
+   "desc": ""},
+  {"type": "Statistics/Classifiers",
+   "amnt": 0.8,
+   "desc": ""},
+  {"type": "Machine Learning",
+   "amnt": 0.6,
+   "desc": ""},
+  {"type": "Natural Language Processing",
+   "amnt": 0.7,
+   "desc": ""},
+  {"type": "Bioinformatics/Dynamic Prog.",
+   "amnt": 0.8,
+   "desc": ""},
+  {"type": "Design Patterns/Architecture",
+   "amnt": 0.8,
+   "desc": ""},
+  {"type": "RDBS Design",
+   "amnt": 0.6,
+   "desc": ""},
+  {"type": "Technical Writing/Publishing",
+   "amnt": 0.6,
+   "desc": ""}
+  ]
+}

@@ -1,6 +1,10 @@
 @font-face { font-family: Gilbert-Color; src: url('Gilbert-Color.otf'); } 
 @font-face { font-family: Gilbert; src: url('Gilbert.otf'); } 
 
+body{
+  opacity: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin: 0;
   padding: 0;
@@ -51,6 +55,9 @@ figure {
 figure.small {
   width: 50%;
   float: right;
+  img {
+    width: 100%;
+  }
 }
 
 hr {
