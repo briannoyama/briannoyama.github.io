@@ -1,0 +1,54 @@
+
+ul.skills{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+  li{
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    padding-bottom: $spacing-unit/2;
+  }
+  
+}
+
+svg.skills{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+path.skills-bar{
+  stroke: $color3;
+  stroke-opacity: 0.667;
+  stroke-width: 0.5;
+  fill: none;
+}
+
+path.skills-back{
+  stroke: $grey-color-light;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+  fill: none;
+}
+
+div#skills-bar{
+  width: 100%;
+  display: inline-block;
+}
+
+div.skills{
+  width: 48%;
+  padding-left: 1%;
+  padding-right: 1%;
+  float: left;
+}
+

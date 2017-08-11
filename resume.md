@@ -4,7 +4,7 @@ title: Résumé
 permalink: /resume/
 ---
 <script type="text/javascript" src="{{ "/assets/res/skill_bars.js" | relative_url }}"></script>
-<div>
+<div id="skills-bar">
   <div class="skills">
     <h2>Skills</h2>
     <script type="text/javascript">

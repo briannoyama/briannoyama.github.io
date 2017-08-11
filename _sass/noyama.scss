@@ -8,6 +8,14 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
+$color0:           #FF0000 !default;
+$color1:           #FF6100 !default;
+$color2:           #FFb400 !default;
+$color3:           #00D47C !default;
+$color4:           #008ED6 !default;
+$color5:           #FE2BD0 !default;
+
+
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
@@ -47,5 +55,6 @@ $on-hd:           1300px !default;
   "noyama/nav",
   "noyama/layout",
   "noyama/syntax-highlighting",
+  "noyama/resume",
   "noyama/big"
 ;

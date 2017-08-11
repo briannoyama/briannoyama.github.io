@@ -10,7 +10,7 @@ path.fold{
 }
 
 circle.fold{
-  fill: #071F4B;
+  fill: $brand-color;
 }
 
 svg.link{
@@ -22,7 +22,7 @@ svg.link{
 }
 
 a.circle circle{
-  stroke: #FFFFFF;
+  stroke: $background-color;
   stroke-width: 0.2;
 }
 
