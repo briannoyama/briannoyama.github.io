@@ -1,6 +1,6 @@
-var noyama = (function(){
+var noyama = (function(clr_json){
 
-  $(document).ready(function() {
+  var load = (function(colors) {
     var page = $('body');
     var head = $("head");
     head.append('<script type="text/javascript" src="/assets/res/polys_coors.js"></script>');
@@ -57,7 +57,12 @@ var noyama = (function(){
       }
     }
   });
-})();
+  $(document).ready(function(){
+    $.getJSON(clr_json, function(clr_obj){load(clr_obj);});
+  });
+  
+
+})('/assets/data/colors.json');
 
 var load_here = (function(json, func){
   var script = document.getElementsByTagName('script');

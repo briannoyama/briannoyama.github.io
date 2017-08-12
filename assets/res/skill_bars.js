@@ -1,7 +1,8 @@
 /*
  * 
  */
-var skill_bars = (function(skill_obj, script){
+var skill_bars = (function(skill_obj, script){  
+
   var skills = skill_obj.skills;
   var ul = document.createElement('ul');
   ul.setAttribute('class', 'skills');
@@ -11,7 +12,7 @@ var skill_bars = (function(skill_obj, script){
   var display_window = document.getElementById(skill_obj.display);
   //display_window.setAttribute('class', 'skill-display');
   
-  skill_bars=[]
+  var skill_bars=[]
   for (var i = 0; i < skills_len; i++){
     var skill_bar = bar(skills[i], display_window);
     ul.append(skill_bar.li);
@@ -24,22 +25,30 @@ var skill_bars = (function(skill_obj, script){
   var max_cnt = 50.0;
   function anim(){
     for(var i = 0; i < skills_len; i++){
-      var cnt = count - i * max_bar *0.25;
-      var diff = (max_cnt - cnt) * (max_cnt - cnt) / (max_cnt * max_cnt);
-      var off = paths[i].getTotalLength() * diff/max_cnt;
-      var on = paths[i].getTotalLength() * (max_cnt - diff)/max_cnt;
-      skill_bars[i].setAttribute('stroke-dasharray', "0," + off + "," + on); 
+      var cnt = count - i * max_cnt *0.25;
+      var diff = (max_cnt - cnt);
+      if (diff >= 0 && diff <= max_cnt){
+        var off = skill_bars[i].getTotalLength() * diff/max_cnt;
+        var on = skill_bars[i].getTotalLength() * (max_cnt - diff)/max_cnt;
+        skill_bars[i].setAttribute('stroke-dasharray', on + "," + off + "," + on);
+      } 
     }
-    
     count ++;
     if (count < max_cnt * (1 + skills_len * 0.25)){
       requestAnimationFrame(anim);
     }
   }
+  requestAnimationFrame(anim);
+  
+  function assign_clr(colors){
+		var color_index = Math.floor(Math.random()*colors.length);
+    for (var i = 0; i < skills_len; i++){
+      skill_bars[i].setAttribute(
+        'stroke', colors[color_index]); 
+    }
+  }
 
-  return {
-    anim : anim
-  };
+  $.getJSON('/assets/data/colors.json', assign_clr);  
 
 });
 
@@ -56,6 +65,7 @@ var bar = (function(skill_obj, display_window){
   var bar = document.createElementNS(svg.namespaceURI, 'path');
   bar.setAttribute('d','M 0 -0.1 H '+10*skill_obj.amnt);
   bar.setAttribute('class', 'skills-bar');
+  bar.setAttribute('stroke-dasharray', '0, 10, 0');
 
   var background = document.createElementNS(svg.namespaceURI, 'path');
   background.setAttribute('d','M 0 0 H 10');

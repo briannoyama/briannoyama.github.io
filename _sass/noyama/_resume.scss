@@ -14,8 +14,27 @@ ul.skills{
     padding: 0;
     z-index: 0;
     padding-bottom: $spacing-unit/2;
+    @extend %whiteshadow;
+
+    a{
+      display : block;
+      &:hover {
+        color: $brand-color;
+        text-decoration: none;
+      }
+    }
   }
   
+}
+
+span.printable{
+  a{
+    display: block; 
+    position: absolute; 
+    left: 60%; 
+    top: 15px;
+    @extend %whiteshadow;
+  }
 }
 
 svg.skills{
@@ -27,7 +46,7 @@ svg.skills{
 }
 
 path.skills-bar{
-  stroke: $color3;
+  #stroke: $color3;
   stroke-opacity: 0.667;
   stroke-width: 0.5;
   fill: none;
@@ -51,4 +70,26 @@ div.skills{
   padding-right: 1%;
   float: left;
 }
+
+
+div#work-history{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  float: right;  
+
+  div#skill-popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: inline-block;
+    background-color: #f5f5f5;
+  }
+}
+
 

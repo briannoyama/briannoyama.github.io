@@ -20,7 +20,7 @@ var paths = (function(canvas, coordinates, polygons){
   
   for (var i = 0; i < path_pnts_length; i++){
     paths[i] = document.createElementNS(svg.namespaceURI, 'path');
-    paths[i].setAttribute('stroke', '' + colors[path_pnts[i][2]]); 
+    paths[i].setAttribute('stroke', colors[path_pnts[i][2]]); 
     paths[i].setAttribute('class', 'fold');
     paths[i].setAttribute('stroke-dasharray', "4," + 0 + "," + 4); 
   }
