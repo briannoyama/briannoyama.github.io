@@ -34,7 +34,7 @@ var skill_bars = (function(skill_obj, script){
       } 
     }
     count ++;
-    if (count < max_cnt * (1 + skills_len * 0.25)){
+    if (count <= max_cnt * (1 + skills_len * 0.25)){
       requestAnimationFrame(anim);
     }
   }
@@ -77,16 +77,13 @@ var bar = (function(skill_obj, display_window){
   li.append(link);
   
   function on(){
-    display_window.innerHTML=skill_obj.desc;
-    $(display_window).animate({
-      opacity: '1'
-    });
+    display_window.innerHTML='<h3>'+skill_obj.type+'</h3><h5>Confidence:' + 
+        Math.floor(skill_obj.amnt*100) + '%</h5>' + skill_obj.desc;
+    $(display_window).css({'opacity':'1'});
   }
 
   function off(){
-    $(display_window).animate({
-      opacity: '0'
-    });
+    $(display_window).css({'opacity':'0'});
   }
 
   $(link).mousedown(on);

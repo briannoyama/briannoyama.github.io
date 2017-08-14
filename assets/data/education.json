@@ -1,18 +1,25 @@
 [
 {"name": "Regis University",
- "text": "Maj: Comp Sci, Math. Min: Women's Studies\nGPA: , 08/2009-05/2013",
+ "text": "Denver, CO\n\
+Bachelor's in Comp Sci, Math,\n\
+Minor in Women's Studies\n\
+GPA: 3.96, 08/2009-05/2013",
  "size": 5,
- "c_pos":[],
- "t_pos":[]},
+ "c_pos":[-5,0],
+ "t_pos":[-13,-4]},
 {"name": "Korea University",
- "text": ,
+ "text": "Seoul, South Korea\n\
+Study Abroad\n\
+02/2012-05/2012",
  "size": 2,
- "c_pos":[],
- "t_pos":[]},
+ "c_pos":[-2.5,0],
+ "t_pos":[-2, 2]},
 {"name": "Iowa State University",
- "text": "GPS: 3.89",
+ "text": "Ames, IA\n\
+Master's Comp Sci\n\
+GPA: 3.89, 06/2013-01/2016",
  "size": 4,
- "c_pos":[],
- "t_pos":[]
+ "c_pos":[5,0],
+ "t_pos":[-1,-4]
 }]
 

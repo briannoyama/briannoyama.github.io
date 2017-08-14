@@ -1,5 +1,5 @@
 {
-  "display":"skill-popup",
+  "display":"skill-popup-2",
   "skills":[
   {"type": "Java",
    "amnt": 0.9,
@@ -28,7 +28,7 @@
   {"type": "Git",
    "amnt": 0.7,
    "desc": ""},
-  {"type": "C/C++",
+  {"type": "C/C++/Other",
    "amnt": 0.4,
    "desc": ""}
   ]

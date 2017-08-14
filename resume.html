@@ -4,25 +4,36 @@ title: Résumé
 permalink: /resume/
 ---
 <script type="text/javascript" src="{{ "/assets/res/skill_bars.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/res/pie_experience.js" | relative_url }}"></script>
 <span class="printable"><a href="" >Printable Version</a></span>
 <div id="skills-bar">
-  <div class="skills">
+  <div class="skills skills-1">
     <h2>Skills</h2>
     <script type="text/javascript">
       load_here('/assets/data/skills.json', skill_bars);
     </script>
   </div>
-  <div class="skills">
-    <h2>Tools/Languages</h2>
+  <div class="skills skills-2">
+    <h2>Lang./Tools</h2>
     <script type="text/javascript">
       load_here('/assets/data/tools.json', skill_bars); 
     </script>
   </div>
 </div>
-<div id="work-history">
-  <h2>Work History</h2>
-  This is where the work-history will go.
-  <div id="skill-popup">
-    
+<div class="chart-bar">
+  <div class="chart" id="work-history">
+    <h2>Work History</h2>
+    <script type="text/javascript">
+      load_here('/assets/data/experience.json', pie_experience); 
+    </script>
+    <div class="popup" id="skill-popup-1">
+      
+    </div>
+  </div>
+  <div class="chart" id="education">
+    <h2>Education</h2>
+    <div class="popup" id="skill-popup-2">
+      
+    </div>
   </div>
 </div>

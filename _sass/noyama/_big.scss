@@ -79,13 +79,17 @@
     width: 35%;
   }
 
-  div#work-history{
+  div.chart-bar{
     width: 65%;
+    padding: 0;
   }
 
   div.skills{
     width: 100%;
     padding: 0;
+    svg.skills {
+      width: 100%;
+    }
   }
   
   h1 { 

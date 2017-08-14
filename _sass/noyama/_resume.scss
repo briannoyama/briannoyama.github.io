@@ -19,10 +19,6 @@ ul.skills{
     a{
       display : block;
       word-wrap: break-word;
-      &:hover {
-        color: $brand-color;
-        text-decoration: none;
-      }
     }
   }
   
@@ -34,12 +30,12 @@ span.printable{
     position: absolute; 
     left: 60%; 
     top: 15px;
+    z-index : -1;
     @extend %whiteshadow;
   }
 }
 
 svg.skills{
-  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -47,7 +43,6 @@ svg.skills{
 }
 
 path.skills-bar{
-  #stroke: $color3;
   stroke-opacity: 0.667;
   stroke-width: 0.5;
   fill: none;
@@ -66,14 +61,28 @@ div#skills-bar{
 }
 
 div.skills{
-  width: 48%;
   padding-left: 1%;
   padding-right: 1%;
   float: left;
 }
 
+div.skills-1{
+  width: 54%;
+  svg.skills {
+    width: 77.7777%;
+  }
+}
 
-div#work-history{
+div.skills-2{
+  width: 42%;
+
+  svg.skills {
+    width: 100%;
+  }
+}
+
+
+div.chart-bar{
   position: relative;
   top: 0;
   left: 0;
@@ -81,16 +90,48 @@ div#work-history{
   display: inline-block;
   float: right;  
 
-  div#skill-popup{
+  div.chart{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  div.popup{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 98%;
     height: 100%;
     opacity: 0;
     display: inline-block;
-    background-color: #f5f5f5;
+    background-color: $background-color;
   }
 }
 
+svg.experience{
 
+  text{
+    z-index: 1;
+    font-family: Gilbert;
+    font-size: 10px;
+    fill: $brand-color;
+  }
+
+  a{
+    &:hover {
+      fill: $text-color;
+      text-decoration: underline;
+    }
+  }
+
+  path.text-line{
+    fill: none;
+    stroke: $brand-color;
+    stroke-width: 1px;
+    stroke-dasharray: 1, 1, 1;
+  }
+}
