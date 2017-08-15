@@ -10,7 +10,7 @@ var pie_experience = (function(experience_obj, script){
   var gigs = experience_obj.gigs;
   var exp_length = exper.length;
   
-  var display_window = document.getElementById(exper.display);
+  var display_window = document.getElementById(experience_obj.display);
   
   function insert(date, index, time_index){
     var paren_len = paren.length;
@@ -48,7 +48,7 @@ var pie_experience = (function(experience_obj, script){
 
   function get_theta(date){
     var normalized = ((date / 100) >> 0) + ((date - 1) % 100)/12.0;
-    return Math.PI - 2 * Math.PI * (normalized - begin)/(end - begin);
+    return 0.905* Math.PI - 2 * Math.PI * (normalized - begin)/(end - begin);
   }
 
   function text_node(exper_obj, time_index, x0, y0){
@@ -93,20 +93,25 @@ var pie_experience = (function(experience_obj, script){
     line.setAttribute('d', 'M ' + x0 + ' ' + y0 + ' V ' + y1 + ' H ' + x1);
     
     var link = document.createElementNS(svg.namespaceURI, 'a');
+    link.setAttribute('class', 'experience');
     link.setAttribute('href', '/');
     link.append(text);
+
     function on(){
       display_window.innerHTML='<h3>'+exper_obj.position+'</h3><h5>' + d_text + 
-      '&nbsp;&nbsp;&nbsp; '+ exper_obj.company + '%</h5>' + skill_obj.desc;
+          '&nbsp;&nbsp;&nbsp; '+ exper_obj.company + '</h5>' + exper_obj.desc +
+          '<h6>(Click to close)</h6>';
       $(display_window).css({'opacity':'1'});
+      $(display_window).css({'z-index':'0'});
     }
 
     function off(){
       $(display_window).css({'opacity':'0'});
+      $(display_window).css({'z-index':'-1'});
     }
 
 
-    link.onclick = on;
+    //link.onclick = on;
     $(link).mouseup(off);
     $(link).hover(on, off);
 

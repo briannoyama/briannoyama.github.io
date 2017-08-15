@@ -10,7 +10,6 @@ var skill_bars = (function(skill_obj, script){
   var skills_len = skills.length;
 
   var display_window = document.getElementById(skill_obj.display);
-  //display_window.setAttribute('class', 'skill-display');
   
   var skill_bars=[]
   for (var i = 0; i < skills_len; i++){
@@ -80,10 +79,12 @@ var bar = (function(skill_obj, display_window){
     display_window.innerHTML='<h3>'+skill_obj.type+'</h3><h5>Confidence:' + 
         Math.floor(skill_obj.amnt*100) + '%</h5>' + skill_obj.desc;
     $(display_window).css({'opacity':'1'});
+    $(display_window).css({'z-index':'0'});
   }
 
   function off(){
     $(display_window).css({'opacity':'0'});
+    $(display_window).css({'z-index':'-1'});
   }
 
   $(link).mousedown(on);

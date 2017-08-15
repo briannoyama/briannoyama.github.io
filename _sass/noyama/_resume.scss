@@ -100,6 +100,7 @@ div.chart-bar{
 
   div.popup{
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     padding-left: 1%;
@@ -112,26 +113,22 @@ div.chart-bar{
   }
 }
 
-svg.experience{
 
-  text{
-    z-index: 1;
-    font-family: Gilbert;
-    font-size: 10px;
-    fill: $brand-color;
-  }
+a.experience{
+  z-index: 1;
+  font-family: Gilbert;
+  font-size: 10px;
+  fill: $brand-color;
 
-  a{
-    &:hover {
-      fill: $text-color;
-      text-decoration: underline;
-    }
+  &:hover {
+    fill: $text-color;
+    text-decoration: underline;
   }
+}
 
-  path.text-line{
-    fill: none;
-    stroke: $brand-color;
-    stroke-width: 1px;
-    stroke-dasharray: 1, 1, 1;
-  }
+path.text-line{
+  fill: none;
+  stroke: $brand-color;
+  stroke-width: 1px;
+  stroke-dasharray: 1, 1, 1;
 }
