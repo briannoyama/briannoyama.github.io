@@ -54,7 +54,7 @@ var skill_bars = (function(skill_obj, script){
 var bar = (function(skill_obj, display_window){
   var li = document.createElement('li');
   var link = document.createElement('a');
-  link.append(document.createTextNode(skill_obj.type));
+  link.innerHTML = skill_obj.type;
 
   var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
