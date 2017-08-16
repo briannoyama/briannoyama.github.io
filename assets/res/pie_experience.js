@@ -94,27 +94,13 @@ var pie_experience = (function(experience_obj, script){
     
     var link = document.createElementNS(svg.namespaceURI, 'a');
     link.setAttribute('class', 'experience');
-    link.setAttribute('href', '/');
     link.append(text);
 
-    function on(){
-      display_window.innerHTML='<h3>'+exper_obj.position+'</h3><h5>' + d_text + 
-          '&nbsp;&nbsp;&nbsp; '+ exper_obj.company + '</h5>' + exper_obj.desc +
-          '<h6>(Click to close)</h6>';
-      $(display_window).css({'opacity':'1'});
-      $(display_window).css({'z-index':'0'});
-    }
-
-    function off(){
-      $(display_window).css({'opacity':'0'});
-      $(display_window).css({'z-index':'-1'});
-    }
-
-
-    //link.onclick = on;
-    $(link).mouseup(off);
-    $(link).hover(on, off);
-
+    var content = '<h3>'+exper_obj.position+'</h3><h5>' + d_text + 
+        '&nbsp;&nbsp;&nbsp; '+ exper_obj.company + '</h5>' + exper_obj.desc;
+    
+    info_loader(link, display_window, content);
+    
     texts[texts.length] = link;
     lines[lines.length] = line;
   }

@@ -1,7 +1,7 @@
 {
   "display":"skill-popup-1",
   "skills":[
-  {"type": "Training/Mentoring/Teaching",
+  {"type": "Training/Mentoring/<wbr>Teaching",
    "amnt": 0.9,
    "desc": "Test1"},
   {"type": "Statistics/Classifiers",
@@ -13,7 +13,7 @@
   {"type": "Natural Language Processing",
    "amnt": 0.7,
    "desc": ""},
-  {"type": "Bioinformatics/Dynamic Prog.",
+  {"type": "Bioinformatics/<wbr>Dynamic Prog.",
    "amnt": 0.8,
    "desc": ""},
   {"type": "Design Patterns/Architecture",
@@ -22,7 +22,7 @@
   {"type": "RDBS Design",
    "amnt": 0.6,
    "desc": ""},
-  {"type": "Technical Writing/Publishing",
+  {"type": "Technical Writing/<wbr>Publishing",
    "amnt": 0.6,
    "desc": ""}
   ]

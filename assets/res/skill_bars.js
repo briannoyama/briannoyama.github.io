@@ -75,21 +75,9 @@ var bar = (function(skill_obj, display_window){
   link.append(svg);
   li.append(link);
   
-  function on(){
-    display_window.innerHTML='<h3>'+skill_obj.type+'</h3><h5>Confidence:' + 
+  var content = '<h3>'+skill_obj.type+'</h3><h5>Confidence:' + 
         Math.floor(skill_obj.amnt*100) + '%</h5>' + skill_obj.desc;
-    $(display_window).css({'opacity':'1'});
-    $(display_window).css({'z-index':'0'});
-  }
-
-  function off(){
-    $(display_window).css({'opacity':'0'});
-    $(display_window).css({'z-index':'-1'});
-  }
-
-  $(link).mousedown(on);
-  $(link).mouseup(off);
-  $(link).hover(on, off);
+  info_loader(link, display_window, content);
 
   return {
     li : li,
