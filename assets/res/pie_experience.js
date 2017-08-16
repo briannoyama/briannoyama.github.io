@@ -126,8 +126,8 @@ var pie_experience = (function(experience_obj, script){
         var x0 = cos0*end_height;
         var y0 = sin0*end_height;
         
-        path.setAttribute('d', path.getAttribute('d') + ' A ' + end_height + ' ' +
-                          end_height + ' 0 0 0 ' + x0 + ' ' + y0 );
+        path.setAttribute('d', path.getAttribute('d') + ' A ' + end_height + 
+            ' ' + end_height + ' 0 0 0 ' + x0 + ' ' + y0 );
 
         if ('offset' in exper[index]){
           path.setAttribute('stroke-width', '' + exper[index].hours);

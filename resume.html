@@ -6,6 +6,8 @@ permalink: /resume/
 <script type="text/javascript" src="{{ "/assets/res/info_loader.js" | relative_url }}"></script>
 <script type="text/javascript" src="{{ "/assets/res/skill_bars.js" | relative_url }}"></script>
 <script type="text/javascript" src="{{ "/assets/res/pie_experience.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/res/venn_edu.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/res/noyama_topics.js" | relative_url }}"></script>
 <span class="printable"><a href="" >Printable Version</a></span>
 <div id="skills-bar">
   <div class="skills skills-1">
@@ -33,8 +35,17 @@ permalink: /resume/
   </div>
   <div class="chart" id="education">
     <h2>Education</h2>
+    <script type="text/javascript">
+      load_here('/assets/data/education.json', venn_edu);
+    </script>
     <div class="popup" id="skill-popup-2">
-      
     </div>
   </div>
 </div>
+
+<h2>Hobbies</h2>
+<figure class="full">
+  <script type="text/javascript">
+    load_here('/assets/data/topics.json', topics); 
+  </script>
+</figure>

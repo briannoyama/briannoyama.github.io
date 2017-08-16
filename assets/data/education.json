@@ -1,25 +1,29 @@
-[
-{"name": "Regis University",
- "text": "Denver, CO\n\
-Bachelor's in Comp Sci, Math,\n\
-Minor in Women's Studies\n\
-GPA: 3.96, 08/2009-05/2013",
- "size": 5,
- "c_pos":[-5,0],
- "t_pos":[-13,-4]},
-{"name": "Korea University",
- "text": "Seoul, South Korea\n\
-Study Abroad\n\
-02/2012-05/2012",
- "size": 2,
- "c_pos":[-2.5,0],
- "t_pos":[-2, 2]},
-{"name": "Iowa State University",
- "text": "Ames, IA\n\
-Master's Comp Sci\n\
-GPA: 3.89, 06/2013-01/2016",
- "size": 4,
- "c_pos":[5,0],
- "t_pos":[-1,-4]
-}]
-
+{"display":"skill-popup-1",
+  "schools":[
+  {"name": "Regis University",
+   "text": ["Denver, CO",
+     "Bachelor's in Comp Sci, Math,",
+     "Minor in Women's Studies",
+     "GPA: 3.96, 08/2009-05/2013"],
+   "size": 70,
+   "c_pos":[-100,-25],
+   "t_pos":[-150,55],
+   "desc":""},
+  {"name": "Korea University",
+   "text": ["Seoul, South Korea",
+     "Study Abroad",
+     "02/2012-05/2012"],
+   "size": 30,
+   "c_pos":[-45,0],
+   "t_pos":[-25, -75],
+   "desc":""},
+  {"name": "Iowa State University",
+   "text": ["Ames, IA",
+     "Master's Comp Sci",
+     "GPA: 3.89, 06/2013-01/2016"],
+   "size": 50,
+   "c_pos":[75,35],
+   "t_pos":[55,-50],
+   "desc":""
+  }]
+}

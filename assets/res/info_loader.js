@@ -5,7 +5,7 @@ var info_loader = (function(link, display_window, content){
 
   function on(){
     $('html, body').animate({
-     'scrollTop': $(display_window).offset().top
+     'scrollTop': $(display_window).offset().top - 100
     });
 
     display_window.innerHTML=content  + '<h6>(Click to close)</h6>';
