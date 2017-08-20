@@ -8,7 +8,7 @@
    "size": 70,
    "c_pos":[-100,-25],
    "t_pos":[-150,55],
-   "desc":""},
+   "desc":"<p>I found my love for CS and Social Justice at Regis.</p><h3>Honors/Activities</h3><ul><li>Diversity Award</li><li>Math-Science Scholarship</li><li>Frederick T. Daly S.J. Award for Excellence in Mathematics</li><li>Alan M. Turing Award for Excellence in Computer Science</li><li>Multicultural Awareness Committee</li><li>President of Gay Straight Alliance</li><li>Volunteer at Comfort Caf&eacute;</li></ul>"},
   {"name": "Korea University",
    "text": ["Seoul, South Korea",
      "Study Abroad",
@@ -16,7 +16,7 @@
    "size": 30,
    "c_pos":[-45,0],
    "t_pos":[-25, -75],
-   "desc":""},
+   "desc":"<p>I learned a lot about myself in Korea, and I picked up some Korean: \uc800\ub294 \ube0c\ub77c\uc5f0 \ub178\uc57c\ub9c8\uc57c\uc694\u002e \ub9cc\ub098\uc11c \ubc18\uac11\uc6cc\uc694\u0021. </p><h3>Highlights from Seoul</h3><ul><li>I mey many Korean people, as well as folks from Turkey, the EU, Japan, China, and all over the USA</li><li>I met my partner, whom I recently married, in Seoul</li><li>I learned about how my upbringing in the USA affects how I interact with others in the wider world.</li><li>The immense respect for education in Korea inspired me to go to graduate school</li></ul>"},
   {"name": "Iowa State University",
    "text": ["Ames, IA",
      "Master's Comp Sci",
@@ -24,6 +24,6 @@
    "size": 50,
    "c_pos":[75,35],
    "t_pos":[55,-50],
-   "desc":""
+   "desc":"<p>I became a better inventor, researcher and teacher at ISU</p><h3>Honors/Activities</h3><ul><li>Robert Stewart Early Research Award</li><li>Teaching Excellence Award</li><li>Pragmatics Fellowship</li><li>Graduate Academic Committee Member</li><li>Graduate and Professional Student Senator</li><li>Computational Thinking Competition Volunteer and Judge</li><li>Youth and Shelter Services GRIP Mentor</li></ul>"
   }]
 }

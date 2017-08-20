@@ -19,6 +19,7 @@ ul.skills{
     a{
       display : block;
       word-wrap: break-word;
+      cursor:pointer;
     }
   }
   
@@ -83,9 +84,6 @@ div.skills-2{
 
 
 div.chart-bar{
-  position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
   display: inline-block;
   float: right;  
@@ -96,6 +94,7 @@ div.chart-bar{
     left: 0;
     padding-left: 1%;
     padding-right: 1%;
+    z-index: 1;
   }
 
   div.popup{
@@ -110,6 +109,10 @@ div.chart-bar{
     opacity: 0;
     display: inline-block;
     background-color: $background-color;
+    overflow-y: auto;
+    li{
+        margin-left: $spacing-unit;
+    }
   }
 }
 
@@ -123,6 +126,7 @@ a.experience{
   &:hover {
     fill: $text-color;
     text-decoration: underline;
+    cursor:pointer;    
   }
 }
 

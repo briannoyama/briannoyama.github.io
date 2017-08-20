@@ -35,7 +35,7 @@ var venn_edu = (function(venn_obj, script){
     var text_len = s.text.length;
     var content = '<h3>'+s.name+'</h3>';
     for (var i = 0; i < text_len; i++){
-      content += '<h5>' + s.text[i] + '</h5>';
+      content += '<h6>' + s.text[i] + '</h6>';
     }
 
     for (var i = 0; i < text_len; i++){
