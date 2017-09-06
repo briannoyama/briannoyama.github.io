@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Updating the Webpage"
-image: "fib-origami.png"
+image: "website-update.png"
 excerpt: "Lessons learned from Jquery, Sass, Jekyll (and Liquid)"
 date:   2017-07-30
 categories: jekyll update
