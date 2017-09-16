@@ -8,7 +8,7 @@
    "size": 70,
    "c_pos":[-100,-25],
    "t_pos":[-150,55],
-   "desc":"<p>I found my love for CS and Social Justice at Regis.</p><h3>Honors/Activities</h3><ul><li>Diversity Award</li><li>Math-Science Scholarship</li><li>Frederick T. Daly S.J. Award for Excellence in Mathematics</li><li>Alan M. Turing Award for Excellence in Computer Science</li><li>Honors Program</li><li>Multicultural Awareness Committee</li><li>President of Gay Straight Alliance</li><li>Volunteer at Comfort Caf&eacute;</li></ul>"},
+   "desc":"<p>I found my love for CS and Social Justice at Regis. <br><a>Unofficial Transcript</a></p><h3>Honors/Activities</h3><ul><li>Diversity Award</li><li>Math-Science Scholarship</li><li>Frederick T. Daly S.J. Award for Excellence in Mathematics</li><li>Alan M. Turing Award for Excellence in Computer Science</li><li>Honors Program</li><li>Multicultural Awareness Committee</li><li>President of Gay Straight Alliance</li><li>Volunteer at Comfort Caf&eacute;</li></ul>"},
   {"name": "Korea University",
    "text": ["Seoul, South Korea",
      "Study Abroad",
@@ -24,6 +24,6 @@
    "size": 50,
    "c_pos":[75,35],
    "t_pos":[55,-50],
-   "desc":"<p>I became a better inventor, researcher and teacher at ISU</p><h3>Honors/Activities</h3><ul><li>Robert Stewart Early Research Award</li><li>Teaching Excellence Award</li><li>Pragmatics Fellowship</li><li>Graduate Academic Committee Member</li><li>Graduate and Professional Student Senator</li><li>Computational Thinking Competition Volunteer and Judge</li><li>Youth and Shelter Services GRIP Mentor</li></ul>"
+   "desc":"<p>I became a better inventor, researcher and teacher at ISU. <br><a href=\"/assets/resume/ISUTranscript.pdf\">Unofficial Transcript</a></p><h3>Honors/Activities</h3><ul><li>Robert Stewart Early Research Award</li><li>Teaching Excellence Award</li><li>Pragmatics (<a href=\"/assets/resume/pragmatics.pdf\">link</a>) Fellowship</li><li>Graduate Academic Committee (<a href=\"/assets/resume/GAC-Poster.jpg\">GAC</a>) Member</li><li>Graduate and Professional Student Senator</li><li>Computational Thinking Competition Volunteer and Judge</li><li>Youth and Shelter Services <a href=\"http://www.yss.ames.ia.us/index.cfm?nodeID=20843&audienceID=1\">GRIP</a> Mentor</li></ul>"
   }]
 }
