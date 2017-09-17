@@ -4,11 +4,11 @@ Brian Noyama
 Unofficial Transcript 
 ---------------------
 
-|      Bachelor of Science          |
+|      Bachelor of Science         ||
 |-------|---------------------------|
-|Major: |Computer Science and Math  |
+|Major  |Computer Science and Math  |
 |-------|---------------------------|
-|Minor: |Women’s and Gender Studies |
+|Minor  |Women’s and Gender Studies |
 
 
 Courses
