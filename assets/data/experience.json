@@ -11,7 +11,7 @@
    "position": "Instructor",
    "time": [[201505, 201506],[201701, 201705]],
    "hours": 20,
-   "desc": "<p>For the Computer Science Department at ISU I taught two sections of Introduction to Object Oriented Programming, one during the summer of 2015 (30 students), and one during the fall of 2017 (150 students) while also working at Kingland. Check out:</p> <ul> <li>Sample lectures/activities I made for class</li> <li>Reviews for my classes</li> <li>Sample homeworks and code I created</li></ul>",
+   "desc": "<p>For the Computer Science Department at ISU I taught two sections of Introduction to Object Oriented Programming, one during the summer of 2015 (30 students), and one during the fall of 2017 (150 students) while also working at Kingland. Check out:</p> <ul> <li>Sample lectures/activities I made for class</li> <li><a href=\"http://www.ratemyprofessors.com/ShowRatings.jsp?tid=2027383\">Reviews</a> for my classes</li> <li>Sample homeworks and <a href=\"https://github.com/briannoyama/SnakeCA\">code</a> I created</li></ul>",
    "t_pos":[[100,15],[-160, -90]]},
   {"company": "ISU CS Department",
    "position": "Teaching Assistant",
