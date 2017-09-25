@@ -25,15 +25,10 @@ ul.skills{
   
 }
 
-span.printable{
-  a{
-    display: block; 
-    position: absolute; 
-    left: 60%; 
-    top: 15px;
-    z-index : -1;
-    @extend %whiteshadow;
-  }
+a.printable{
+  display: block; 
+  text-align: center;
+  @extend %whiteshadow;
 }
 
 svg.skills{
@@ -140,4 +135,8 @@ path.text-line{
 circle.education{
   fill-opacity: 0.667;
   stroke-width: 2;
+}
+
+div.footer-col-3{
+  display: none;
 }
