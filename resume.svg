@@ -1,0 +1,308 @@
+---
+permalink: resume.svg
+---
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!--Dimensions below set for 8.5x11 paper-->
+
+<svg 
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg" 
+  version="1.1"
+  viewBox="-19 -15 90 116.5">
+  <defs>
+    <style>
+      
+      @font-face { 
+        font-family: Gilbert-Color; 
+        src: url('/assets/Gilbert-Color.otf'); 
+      }
+       
+      @font-face { 
+        font-family: Gilbert; 
+        src: url('/assets/Gilbert.otf'); 
+      }
+      
+      circle.fold {
+        opacity: 0.5;
+        fill: #071F4B;
+      }
+      
+      path.fold {
+        opacity: 0.333;
+        stroke-width: 1;
+        fill: none;    
+      }
+      
+      polygon.fold {
+        opacity: 0.333;
+      }
+      
+      text{
+        font-family: Gilbert;
+        fill: #071F4B;
+      }
+      
+      text.title {
+        font-family: Gilbert-Color;
+        font-size: 6px;
+        text-shadow: -1px -1px #ffffff,
+                1px -1px #ffffff,
+               -1px  1px #ffffff,
+                1px  1px #ffffff;
+      }
+      
+      text.subtitle {
+        font-size: 3px;
+        text-shadow: -1px -1px #ffffff,
+                1px -1px #ffffff,
+               -1px  1px #ffffff,
+                1px  1px #ffffff;
+      }
+      
+      text.contitle {
+        font-family: Gilbert-Color;
+        font-size: 3px;
+        text-shadow: -1px -1px #ffffff,
+                1px -1px #ffffff,
+               -1px  1px #ffffff,
+                1px  1px #ffffff;
+      }
+      
+      text.contact {
+        font-size: 3px;
+        text-shadow: -1px -1px #ffffff,
+                1px -1px #ffffff,
+               -1px  1px #ffffff,
+                1px  1px #ffffff;
+      }
+      
+    </style>
+  </defs>
+  <rect x="-19" y="-15" width="90" height="116.5"
+    style="fill:white;">
+  </rect>
+
+  <circle cx="0" cy="0" r="4" class="fold">
+  </circle>
+  <circle cx="-8.5" cy="1.5" r="2.5" class="fold">
+  </circle>
+  <circle cx="-9.5" cy="7.5" r="1.5" class="fold">
+  </circle>
+  <circle cx="-14" cy="8" r="1" class="fold">
+  </circle>
+  <circle cx="-14.5" cy="11.5" r="0.5" class="fold">
+  </circle>
+  <circle cx="-17.5" cy="11.5" r="0.5" class="fold">
+  </circle>
+  <circle cx="-1.5" cy="-8.5" r="2.5" class="fold">
+  </circle>
+  <circle cx="-7.5" cy="-9.5" r="1.5" class="fold">
+  </circle>
+  <circle cx="-8" cy="-14" r="1" class="fold">
+  </circle>
+  <circle cx="-11.5" cy="-14.5" r="0.5" class="fold">
+  </circle>
+  <circle cx="8.5" cy="-1.5" r="2.5" class="fold">
+  </circle>
+  <circle cx="9.5" cy="-7.5" r="1.5" class="fold">
+  </circle>
+  <circle cx="14" cy="-8" r="1" class="fold">
+  </circle>
+  <circle cx="14.5" cy="-11.5" r="0.5" class="fold">
+  </circle>
+  <circle cx="17.5" cy="-11.5" r="0.5" class="fold">
+  </circle>
+
+  <polygon class="fold" style="fill:#008ED6;" points="-12 4,5 4,-4 5,-6 5">
+  </polygon>
+  <polygon class="fold" style="fill:#00D47C;" points="-4 5,-5 -4,-5 -6,-4 -12">
+  </polygon>
+  <polygon class="fold" style="fill:#008ED6;" points="-5 -4,4 -5,6 -5,12 -4">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="4 -5,5 4,5 6,4 6">
+  </polygon>
+  <polygon class="fold" style="fill:#FE2BD0;" points="-12 4,-11 -2,-11 10,-12 6">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="-11 -2,-5 -1,-13 -1,-12 -2">
+  </polygon>
+  <polygon class="fold" style="fill:#00D47C;" points="-5 -1,-6 5,-6 -12,-5 -8">
+  </polygon>
+  <polygon class="fold" style="fill:#00D47C;" points="-8 5,-12 6,-6 6,-6 5">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="-8 5,-7 9,-7 11,-8 11">
+  </polygon>
+  <polygon class="fold" style="fill:#00D47C;" points="-12 7,-13 10,-13 -3,-12 -2">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="-19 -9,-19 -7,-13 -1,-12 -2">
+  </polygon>
+  <polygon class="fold" style="fill:#FF6100;" points="-16 9,-7 9,-11 10,-13 10">
+  </polygon>
+  <polygon class="fold" style="fill:#FE2BD0;" points="-16 9,-15 6,-15 13,-16 11">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="-12 7,-15 6,-16 6,-17 7">
+  </polygon>
+  <polygon class="fold" style="fill:#FF6100;" points="-16 6,-17 5,-17 13,-16 11">
+  </polygon>
+  <polygon class="fold" style="fill:#FE2BD0;" points="-16 6,-17 7,-19 5,-19 3">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="-19 10,-18 10,-16 11,-19 11">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="-17 13,-19 12,-13 12,-15 13">
+  </polygon>
+  <polygon class="fold" style="fill:#FF6100;" points="-14 10,-13 12,-13 14,-14 14">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="-19 12,-18 10,-18 15,-19 14">
+  </polygon>
+  <polygon class="fold" style="fill:#FF6100;" points="-19 14,-17 14,-18 15,-19 15">
+  </polygon>
+  <polygon class="fold" style="fill:#00D47C;" points="-19 14,-18 13,-16 13,-16 14">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="-18 16,-17 16,-17 14,-18 13">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="-12 10,-12 11,-16 11,-14 10">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="-4 -12,2 -11,-10 -11,-6 -12">
+  </polygon>
+  <polygon class="fold" style="fill:#FE2BD0;" points="2 -12,2 -11,1 -5,1 -13">
+  </polygon>
+  <polygon class="fold" style="fill:#008ED6;" points="2 -12,1 -13,3 -15,5 -15">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="3 -13,2 -12,-7 -12,-10 -13">
+  </polygon>
+  <polygon class="fold" style="fill:#008ED6;" points="-7 -15,-6 -15,-7 -12">
+  </polygon>
+  <polygon class="fold" style="fill:#008ED6;" points="-10 -15,-9 -15,-9 -7,-10 -11">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="-5 -8,-11 -8,-10 -7,-9 -7">
+  </polygon>
+  <polygon class="fold" style="fill:#FF6100;" points="-11 -16,-10 -14,-10 -7,-11 -6">
+  </polygon>
+  <polygon class="fold" style="fill:#FE2BD0;" points="-11 -8,-10 -7,-19 2,-19 0">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="-10 -14,-12 -13,-16 -13,-17 -14">
+  </polygon>
+  <polygon class="fold" style="fill:#008ED6;" points="-12 -15,-13 -15,-12 -13">
+  </polygon>
+  <polygon class="fold" style="fill:#00D47C;" points="-17 -14,-16 -13,-19 -10,-19 -12">
+  </polygon>
+  <polygon class="fold" style="fill:#00D47C;" points="-17 -15,-16 -15,-16 -13,-17 -12">
+  </polygon>
+  <polygon class="fold" style="fill:#008ED6;" points="1 -5,-5 -6,12 -6,8 -5">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="6 -5,5 1,5 3,6 3">
+  </polygon>
+  <polygon class="fold" style="fill:#008ED6;" points="5 1,11 2,13 2,13 1">
+  </polygon>
+  <polygon class="fold" style="fill:#FE2BD0;" points="11 2,12 -4,12 -6,11 -10">
+  </polygon>
+  <polygon class="fold" style="fill:#00D47C;" points="11 -10,7 -9,16 -9,13 -10">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="8 -5,7 -9,7 -10,8 -11">
+  </polygon>
+  <polygon class="fold" style="fill:#FE2BD0;" points="7 -10,8 -11,4 -15,2 -15">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="6 -11,7 -10,14 -10,16 -11">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="13 -10,12 -7,12 -5,13 -5">
+  </polygon>
+  <polygon class="fold" style="fill:#FF6100;" points="12 -7,15 -6,18 -6,18 -7">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="15 -6,16 -9,16 -11,15 -13">
+  </polygon>
+  <polygon class="fold" style="fill:#FF6100;" points="14 -10,13 -12,13 -13,14 -14">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="13 -13,12 -14,19 -14,18 -13">
+  </polygon>
+  <polygon class="fold" style="fill:#00D47C;" points="13 -12,15 -13,17 -13,19 -12">
+  </polygon>
+  <polygon class="fold" style="fill:#FF6100;" points="16 -11,16 -9,17 -9,17 -13">
+  </polygon>
+  <polygon class="fold" style="fill:#FFb400;" points="16 -11,18 -10,20 -10,20 -11">
+  </polygon>
+  <polygon class="fold" style="fill:#008ED6;" points="18 -10,19 -12,19 -14,18 -15">
+  </polygon>
+  <polygon class="fold" style="fill:#FF0000;" points="18 -15,17 -14,20 -14,20 -15">
+  </polygon>
+  <polygon class="fold" style="fill:#FF6100;" points="17 -15,17 -14,18 -13,18 -15">
+  </polygon>
+  <polygon class="fold" style="fill:#FE2BD0;" points="13 -13,14 -14,13 -15,11 -15">
+  </polygon>
+
+  <path stroke="#FF0000" class="fold" stroke-dasharray="0,0,301.2955322265625" 
+    d="M -17.5 16 q 0 0.5 -0.5 1 q -0.5 0.5 -0.5 1 l 0 299">
+  </path>
+  <path stroke="#00D47C" class="fold" stroke-dasharray="0,0,306.2284240722656" 
+    d="M -16 13.5 q 0.5 0 0.5 0.5 l 0 2 q 0 0.5 -0.5 1 l -1.5, 1.5 q -0.5 0.5 -0.5 1  l 0 299">
+  </path>
+  <path stroke="#FF6100" class="fold" stroke-dasharray="0,0,307.5381774902344" 
+    d="M -13.5 14 l 0 2 q 0 0.5 -0.5 1 l -3, 3 q -0.5 0.5 -0.5 1  l 0 299">
+  </path>
+  <path stroke="#FF0000" class="fold" stroke-dasharray="0,0,313.4710693359375" 
+    d="M -12 10.5 q 0.5 0 0.5 0.5 l 0 5 q 0 0.5 -0.5 1 l -4.5, 4.5 q -0.5 0.5 -0.5 1  l 0 299">
+  </path>
+  <path stroke="#FF0000" class="fold" stroke-dasharray="0,0,315.6092529296875" 
+    d="M -7.5 11 l 0 3 q 0 0.5 -0.5 1 l -8, 8 q -0.5 0.5 -0.5 1  l 0 299">
+  </path>
+  <path stroke="#00D47C" class="fold" stroke-dasharray="0,0,323.5421142578125" 
+    d="M -6 5.5 q 0.5 0 0.5 0.5 l 0 8 q 0 0.5 -0.5 1 l -9.5, 9.5 q -0.5 0.5 -0.5 1  l 0 299">
+  </path>
+  <path stroke="#FFb400" class="fold" stroke-dasharray="0,0,328.16558837890625" 
+    d="M 4.5 6 q 0 0.5 -0.5 1 l -19, 19 q -0.5 0.5 -0.5 1 l 0 299">
+  </path>
+  <path stroke="#FF0000" class="fold" stroke-dasharray="0,0,73.58729553222656" 
+    d="M 5.5 3 q 0 0.5 0.5 0.5 l 10 0 q 0.5 0 1 -0.5 l 14 -14 q 0.5 -0.5 1 -0.5 l 35 0 q 3.5 0 3.5 -3.5">
+  </path>
+  <path stroke="#008ED6" class="fold" stroke-dasharray="0,0,64.34283447265625" 
+    d="M 13 1.5 l 3 0 q 0.5 0 1 -0.5 l 12.5 -12.5 q 0.5 -0.5 1 -0.5 l 36.5 0 q 3 0 3 -3">
+  </path>
+  <path stroke="#FF0000" class="fold" stroke-dasharray="0,0,62.06460189819336" 
+    d="M 12.5 -5 q 0 0.5 0.5 0.5 l 7 0 q 0.5 0 1 -0.5 l 7 -7 q 0.5 -0.5 1 -0.5 l 38 0 q 2.5 0 2.5 -2.5">
+  </path>
+  <path stroke="#FF6100" class="fold" stroke-dasharray="0,0,54.8200798034668" 
+    d="M 18 -6.5 l 2 0 q 0.5 0 1 -0.5 l 5.5 -5.5 q 0.5 -0.5 1 -0.5 l 39.5 0 q 2 0 2 -2">
+  </path>
+  <path stroke="#FF6100" class="fold" stroke-dasharray="0,0,55.1987419128418" 
+    d="M 16.5 -9 q 0 0.5 0.5 0.5 l 3 0 q 0.5 0 1 -0.5 l 4 -4 q 0.5 -0.5 1 -0.5 l 41 0 q 1.5 0 1.5 -1.5">
+  </path>
+  <path stroke="#FFb400" class="fold" stroke-dasharray="0,0,49.95423889160156" 
+    d="M 20 -10.5 q 0.5 0 1 -0.5 l 2.5 -2.5 q 0.5 -0.5 1 -0.5 l 42.5 0 q 1 0 1 -1">
+  </path>
+  <path stroke="#FF0000" class="fold" stroke-dasharray="0,0,47.81157302856445" 
+    d="M 20 -14.5 l 47 0 q 0.5 0 0.5 -0.5">
+  </path>
+  
+  <text class="title" x="29" y="-9">
+    BRIAN NOYAMA
+  </text>
+
+  <text class="subtitle" x="-16" y="0">
+    Skills
+  </text>
+  
+  
+  <text class="subtitle" x="-16" y="45">
+    Tools
+  </text>
+  
+  <text class="contitle" x="-16" y="90">
+    Contact Me
+  </text>
+  
+  <text class="subtitle" x="29" y="0">
+    Work History
+  </text>
+  
+  <text class="subtitle" x="29" y="33">
+    Education
+  </text>
+  
+  <text class="subtitle" x="29" y="66">
+    Hobbies
+  </text>
+  
+
+</svg>
+
