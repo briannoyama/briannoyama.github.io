@@ -26,57 +26,51 @@ permalink: resume.svg
       }
       
       circle.fold {
-        opacity: 0.5;
+        opacity: 0.166;
         fill: #071F4B;
       }
       
       path.fold {
-        opacity: 0.333;
+        opacity: 0.166;
         stroke-width: 1;
         fill: none;    
       }
       
       polygon.fold {
-        opacity: 0.333;
+        opacity: 0.166;
       }
       
       text{
-        font-family: Gilbert;
-        fill: #071F4B;
+        font-family: sans-serif;
+        fill: #000000;
+        font-size: 2px;
+        text-shadow: -1px -1px #ffffff;
+      }
+      
+      text.sub{
+        font-size: 1.5px;
       }
       
       text.title {
         font-family: Gilbert-Color;
+        fill: #071F4B;
         font-size: 6px;
-        text-shadow: -1px -1px #ffffff,
-                1px -1px #ffffff,
-               -1px  1px #ffffff,
-                1px  1px #ffffff;
       }
       
       text.subtitle {
         font-size: 3px;
-        text-shadow: -1px -1px #ffffff,
-                1px -1px #ffffff,
-               -1px  1px #ffffff,
-                1px  1px #ffffff;
+        fill: #071F4B;
+        font-family: Gilbert;
       }
       
       text.contitle {
         font-family: Gilbert-Color;
         font-size: 3px;
-        text-shadow: -1px -1px #ffffff,
-                1px -1px #ffffff,
-               -1px  1px #ffffff,
-                1px  1px #ffffff;
       }
       
       text.contact {
-        font-size: 3px;
-        text-shadow: -1px -1px #ffffff,
-                1px -1px #ffffff,
-               -1px  1px #ffffff,
-                1px  1px #ffffff;
+        fill: #071F4B;
+        font-size: 2px;
       }
       
     </style>
@@ -281,27 +275,73 @@ permalink: resume.svg
   <text class="subtitle" x="-16" y="0">
     Skills
   </text>
+
+  {% for topic in site.data.skills.skills %}
+    <text x="-16" y="{{ forloop.index0 | times: 3 | plus: 3}}">
+      {{ topic.type | strip_html }}
+    </text>
+
+  {% endfor %}  
   
-  
-  <text class="subtitle" x="-16" y="45">
+  <text class="subtitle" x="-16" y="30">
     Tools
   </text>
+  
+  {% for topic in site.data.tools.skills %}
+    <text x="-16" y="{{ forloop.index0 | times: 3 | plus: 33}}">
+      {{ topic.type | strip_html }}
+    </text>
+
+  {% endfor %}  
+  
+  
+  <text class="subtitle" x="-16" y="69">
+    Hobbies
+  </text>
+
+  {% for topic in site.data.hobbies %}
+    <text x="-16" y="{{ forloop.index0 | times: 3 | plus: 72}}">
+      {{ topic.desc | strip_html }}
+    </text>
+
+  {% endfor %}  
   
   <text class="contitle" x="-16" y="90">
     Contact Me
   </text>
   
-  <text class="subtitle" x="29" y="0">
+  <text class="contact" x="-16" y="93">
+    brian@noyama-dev.com
+  </text>
+  
+  
+  <text class="contact" x="-16" y="96">
+    github.com/briannoyama
+  </text>
+  
+  
+  <text class="contact" x="-16" y="99">
+    linkedin.com/in/briannoyama/
+  </text>
+  
+  
+  <text class="contact" x="34" y="-6">
+    View the interactive resume:
+  </text>
+  
+  <text class="subtitle" x="29" y="-3">
+    <a href="http://www.noyama-dev.com/resume/">www.noyama-dev.com/resume/</a>
+  </text>
+  
+  
+  <text class="subtitle" x="18" y="0">
     Work History
   </text>
   
-  <text class="subtitle" x="29" y="33">
+  <text class="subtitle" x="18" y="50">
     Education
   </text>
   
-  <text class="subtitle" x="29" y="66">
-    Hobbies
-  </text>
   
 
 </svg>
