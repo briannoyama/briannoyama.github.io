@@ -12,7 +12,7 @@
       <ul>
         {% for path in page_paths %}
           {% assign my_page = site.pages | where: "path", path | first %}
-          {% if my_page.title %}
+          {% if my_page.title.size > 0 %}
             <li><a class="circle nav" href="{{my_page.permalink}}#_">&nbsp;&nbsp;{{ my_page.title | escape }}</a></li>
           {% endif %}
         {% endfor %}
