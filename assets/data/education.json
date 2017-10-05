@@ -1,10 +1,25 @@
 {"display":"skill-popup-1",
   "schools":[
+  {"name": "Iowa State University",
+   "text": ["Ames, IA",
+     "Master's Comp Sci",
+     "GPA: 3.89, 06/2013 - 01/2016"],
+   "points": [
+     "Graduate Student Senator, GAC member",
+     "Volunteer competition judge, youth mentor"],
+   "size": 50,
+   "c_pos":[75,35],
+   "t_pos":[55,-50],
+   "desc":"<p>I became a better inventor, researcher and teacher at ISU. <br><a href=\"/assets/resume/ISUTranscript.pdf\">Unofficial Transcript</a></p><h3>Honors/Activities</h3><ul><li>Robert Stewart Early Research Award</li><li>Teaching Excellence Award</li><li>Pragmatics (<a href=\"/assets/resume/pragmatics.pdf\">link</a>) Fellowship</li><li>Graduate Academic Committee (<a href=\"/assets/resume/GAC-Poster.jpg\">GAC</a>) Member</li><li>Graduate and Professional Student Senator</li><li>Computational Thinking Competition Volunteer and Judge</li><li>Youth and Shelter Services <a href=\"http://www.yss.ames.ia.us/index.cfm?nodeID=20843&audienceID=1\">GRIP</a> Mentor</li></ul>"
+  },
   {"name": "Regis University",
    "text": ["Denver, CO",
-     "Bachelor's in Comp Sci, Math,",
+     "Bachelor's in Comp Sci, Math",
      "Minor in Women's Studies",
-     "GPA: 3.96, 08/2009-05/2013"],
+     "GPA: 3.96, 08/2009 - 05/2013"],
+   "points": [
+     "Minored in Women's Studies",
+     "Lead clubs, helped committees, volunteered"],
    "size": 70,
    "c_pos":[-100,-25],
    "t_pos":[-150,55],
@@ -12,18 +27,12 @@
   {"name": "Korea University",
    "text": ["Seoul, South Korea",
      "Study Abroad",
-     "02/2012-05/2012"],
+     "02/2012 - 05/2012"],
+   "points": [
+     "Learned Hangul: \uc800\ub294 \ube0c\ub77c\uc5f0\uc608\uc694. \ub9cc\ub098\uc11c \ubc18\uac00\uc6cc\uc694",
+     "Met people from Korea, China, Germany, ..."],
    "size": 30,
    "c_pos":[-45,0],
    "t_pos":[-25, -75],
-   "desc":"<p>I learned a lot about myself in Korea, and I picked up some Korean: \uc800\ub294 \ube0c\ub77c\uc5f0 \ub178\uc57c\ub9c8\uc608\uc694. \ub9cc\ub098\uc11c \ubc18\uac11\uc6cc\uc694\u0021. </p><h3>Highlights from Seoul</h3><ul><li>I mey many Korean people, as well as folks from Turkey, the EU, Japan, China, and all over the USA</li><li>I met my partner, whom I recently married, in Seoul</li><li>I learned about how my upbringing in the USA affects how I interact with others in the wider world.</li><li>The immense respect for education in Korea inspired me to go to graduate school</li></ul>"},
-  {"name": "Iowa State University",
-   "text": ["Ames, IA",
-     "Master's Comp Sci",
-     "GPA: 3.89, 06/2013-01/2016"],
-   "size": 50,
-   "c_pos":[75,35],
-   "t_pos":[55,-50],
-   "desc":"<p>I became a better inventor, researcher and teacher at ISU. <br><a href=\"/assets/resume/ISUTranscript.pdf\">Unofficial Transcript</a></p><h3>Honors/Activities</h3><ul><li>Robert Stewart Early Research Award</li><li>Teaching Excellence Award</li><li>Pragmatics (<a href=\"/assets/resume/pragmatics.pdf\">link</a>) Fellowship</li><li>Graduate Academic Committee (<a href=\"/assets/resume/GAC-Poster.jpg\">GAC</a>) Member</li><li>Graduate and Professional Student Senator</li><li>Computational Thinking Competition Volunteer and Judge</li><li>Youth and Shelter Services <a href=\"http://www.yss.ames.ia.us/index.cfm?nodeID=20843&audienceID=1\">GRIP</a> Mentor</li></ul>"
-  }]
+   "desc":"<p>I learned a lot about myself in Korea, and I picked up some Korean: \uc800\ub294 \ube0c\ub77c\uc5f0 \ub178\uc57c\ub9c8\uc608\uc694. \ub9cc\ub098\uc11c \ubc18\uac00\uc6cc\uc694! </p><h3>Highlights from Seoul</h3><ul><li>I mey many Korean people, as well as folks from Turkey, the EU, Japan, China, and all over the USA</li><li>I met my partner, whom I recently married, in Seoul</li><li>I learned about how my upbringing in the USA affects how I interact with others in the wider world.</li><li>The immense respect for education in Korea inspired me to go to graduate school</li></ul>"}]
 }

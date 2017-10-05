@@ -26,9 +26,11 @@ permalink: resume.svg
         src: url('/assets/Gilbert.otf'); 
       }
       
+      circle {
+        fill: #071F4B;
+      }
       circle.fold {
         opacity: 0.166;
-        fill: #071F4B;
       }
       
       path.fold {
@@ -83,6 +85,11 @@ permalink: resume.svg
       
       text.position {
         fill: #071F4B;
+      }
+      
+      text.place {
+        fill: #071F4B;
+        text-anchor: end;
       }
       
       svg.icon {
@@ -355,54 +362,101 @@ permalink: resume.svg
   </text>
   
   
-  <text class="contact" x="34" y="-6">
-    View the interactive resume:
+  <text class="contact" x="33" y="-6">
+    View the interactive résumé:
   </text>
   
-  <text class="subtitle" x="29" y="-3">
+  <text class="subtitle" x="28" y="-3">
     <a href="http://www.noyama-dev.com/resume/">
       www.noyama-dev.com/resume/
     </a>
   </text>
   
   
-  <text class="subtitle" x="18" y="0">
+  <text class="subtitle" x="17" y="0">
     Work History
   </text>
 
 
   {% for experience in site.data.experience.experiences %}
-    <text class="company" x="18" y="{{ forloop.index0 | times: 12 | plus: 3.25}}">
+    {% if forloop.index0 == 4 %}
+      {% break %}
+    {% endif %}
+    <text class="company" x="17" y="{{ forloop.index0 | times: 12 | plus: 3.25}}">
       {{ experience.company | strip_html }}
     </text>
     
     <text class="date" x="68" y="{{ forloop.index0 | times: 12 | plus: 3.25}}">
-      {{ experience.time | first | strip_html }}
+      {{ experience.time | first | first | modulo: 100}}/{{ experience.time | first | first | divided_by: 100 | round}} - 
+      {% capture last_word %}{{ experience.time | last | last }}{% endcapture %}
+      {% if last_word == 'now' %}
+        Present
+      {% else %}
+        {{ experience.time | last | last | modulo: 100}}/{{ experience.time | last | last | divided_by: 100}}
+      {% endif %} 
     </text>
     
-    <text class="position" x="18" y="{{ forloop.index0 | times: 12 | plus: 6}}">
+    <text class="position" x="17" y="{{ forloop.index0 | times: 12 | plus: 6}}">
       {{ experience.position | strip_html }}
     </text>
 
-    <foreignObject x="20" y="{{ forloop.index0 | times: 12 | plus:4}}" width="100" height="100">
-      <p>
-        Text goes here
-      </p>
-    </foreignObject>
 
+    <circle cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 8}}" r=".75">
+    </circle>
+    <text x="20" y="{{ forloop.index0 | times: 12 | plus: 9}}">
+      {{ experience.points | first }}
+    </text>
+    
+    
+    <circle cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 11}}" r=".75">
+    </circle>
+    <text x="20" y="{{ forloop.index0 | times: 12 | plus: 12}}">
+      {{ experience.points | last }}
+    </text>
+    
   {% endfor %}
   
-  <text class="subtitle" x="18" y="50">
+  <text class="subtitle" x="17" y="54">
     Education
   </text>
   
 
   {% for school in site.data.education.schools %}
-    <text x="18" y="{{ forloop.index0 | times: 3 | plus: 53}}">
+    <text class="company" x="17" y="{{ forloop.index0 | times: 12 | plus: 57.25}}">
       {{ school.name | strip_html }}
     </text>
+    
+    <text class="date" x="68"  y="{{ forloop.index0 | times: 12 | plus: 57}}">
+      {{ school.text | last | split: ',' | last | strip_html }}
+    </text>
+    
+    
+    <text class="position" x="17"  y="{{ forloop.index0 | times: 12 | plus: 60}}">
+      {{ school.text[1] }}
+    </text>
+    
+    <text class="place" x="68"  y="{{ forloop.index0 | times: 12 | plus: 60}}">
+      {{ school.text[0] }}
+    </text>
+    
+    <circle cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 62}}" r=".75">
+    </circle>
+    <text x="20" y="{{ forloop.index0 | times: 12 | plus: 63}}">
+      {{ school.points | first }}
+    </text>
+    
+    <circle cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 65}}" r=".75">
+    </circle>
+    <text x="20" y="{{ forloop.index0 | times: 12 | plus: 66}}">
+      {{ school.points | last }}
+    </text>    
 
   {% endfor %}  
+
+
+  <text class="subtitle" x="32" y="96">
+    Tools Used for Résumé
+  </text>
 
 </svg>
 
