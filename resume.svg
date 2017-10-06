@@ -26,21 +26,38 @@ permalink: resume.svg
         src: url('/assets/Gilbert.otf'); 
       }
       
-      circle {
-        fill: #071F4B;
+      image.origami {
+        opacity: 0.5;
       }
+      
+      circle.bull {
+        fill: #071F4B;
+        opacity: 0.33;
+      }
+      
       circle.fold {
-        opacity: 0.166;
+        fill: #071F4B;
+        opacity: 0.33;
+      }
+      
+      circle.edu {
+        opacity: 0.33;
+        stroke-width: 3;
+      }
+      
+      path.exp {
+        opacity: 0.33;
+        fill: none;    
       }
       
       path.fold {
-        opacity: 0.166;
+        opacity: 0.33;
         stroke-width: 1;
         fill: none;    
       }
       
       polygon.fold {
-        opacity: 0.166;
+        opacity: 0.33;
       }
       
       text{
@@ -292,6 +309,64 @@ permalink: resume.svg
     d="M 20 -14.5 l 47 0 q 0.5 0 0.5 -0.5">
   </path>
   
+  <svg width="75px" viewBox="-180 -100 360 240" x="5" y="-30" >
+    <path d="M -38.231720591933204 11.761613009292166 A 40 40 0 0 0 -31.743753676682086 24.337914917143838" 
+      stroke-width="40" stroke-dasharray="14.226072311401367,0,14.226072311401367" 
+      stroke="#FE2BD0" class="exp">
+    </path>
+    <path d="M -31.743753676682086 24.337914917143838 A 40 40 0 0 0 1.268279524620546 39.97988828207788" 
+      stroke-width="40" stroke="#FF0000" class="exp"  
+      stroke-dasharray="37.557075119018556,0.3793643951416016,37.557075119018556">
+      </path>
+    <path d="M 1.268279524620546 39.97988828207788 A 40 40 0 0 0 10.623514628737409 38.56346635007027" 
+      stroke-width="40" stroke="#FE2BD0" class="exp" 
+      stroke-dasharray="9.48404312133789,0,9.48404312133789">
+    </path>
+    <path d="M 17.26321127169829 62.66563281886419 A 65 65 0 0 0 24.553705550558696 60.18401402146971" 
+      stroke-width="65" stroke="#FF6100" class="exp" 
+      stroke-dasharray="7.628730254173279,0.07705788135528564,7.628730254173279">
+    </path>
+    <path d="M 15.10997264649766 37.03631632090443 A 40 40 0 0 0 39.728973309630646 4.648513715442353" 
+      stroke-width="40" stroke="#FE2BD0" class="exp"  
+      stroke-dasharray="42.67878723144531,0,42.67878723144531">
+    </path><path d="M 39.728973309630646 4.648513715442353 A 40 40 0 0 0 39.70934341522841 -4.813319595814945" 
+      stroke-width="40" stroke="#00D47C" class="exp"  
+      stroke-dasharray="9.48404598236084,0,9.48404598236084">
+    </path>
+    <path d="M 64.52768304974616 -7.821644343199286 A 65 65 0 0 0 63.14967875966204 -15.39863865903376" 
+      stroke-width="65" stroke="#FF6100" class="exp"  
+      stroke-dasharray="7.628732614517212,0.07705790519714356,7.628732614517212">
+    </path>
+    <path d="M 38.86134077517664 -9.47608532863616 A 40 40 0 0 0 26.938032561823448 -29.569281386231552" 
+      stroke-width="40" stroke="#FF0000" class="exp"  
+      stroke-dasharray="23.710121154785156,0,23.710121154785156">
+    </path>
+    <path d="M 72.13880375360462 36.83738580571264 A 81 81 0 0 0 21.18841188471427 -78.17960860610457" 
+      stroke-width="6" stroke="#008ED6" class="exp"  
+      stroke-dasharray="142.59920059204103,1.4403959655761718,142.59920059204103">
+    </path>
+    <path d="M -44.21882439184271 -54.2650492435359 A 70 70 0 0 0 -66.99033861059829 -20.305037129672634" 
+      stroke-width="70" stroke="#00D47C" class="exp"  
+      stroke-dasharray="41.49272155761719,0,41.49272155761719">
+    </path>
+    <path d="M 33.672540702279306 -36.96160173278944 A 50 50 0 0 0 -47.7896507399165 14.702016261615194" 
+      stroke-width="50" stroke="#FFb400" class="exp"  
+      stroke-dasharray="129.10748977661132,1.3041160583496094,129.10748977661132">
+    </path>
+  </svg>
+  
+  <svg width="57.5px" x="17.5" y="15"  viewBox="-180 -100 360 200">
+    <circle cx="75" cy="35" r="50" stroke="#FF6100" 
+      fill="#FF6100" class="edu">
+    </circle>
+    <circle cx="-100" cy="-25" r="70" stroke="#FFb400" 
+      fill="#FFb400" class="edu">
+    </circle>
+    <circle cx="-45" cy="0" r="30" stroke="#00D47C" 
+      fill="#00D47C" class="edu">
+    </circle>
+  </svg>
+  
   <text class="title" x="29" y="-9">
     BRIAN NOYAMA
   </text>
@@ -322,6 +397,18 @@ permalink: resume.svg
   <text class="subtitle" x="-16" y="69">
     Hobbies
   </text>
+  
+  <clipPath id="shift_sq_0" clipPathUnits="objectBoundingBox">
+    <polygon points="0,0.1,0.1,1,1,0.9,0.9,0">
+    </polygon>
+  </clipPath>
+  
+  <image class="origami" xlink:href="/assets/images/oct-shadow.jpg" 
+    clip-path="url(#shift_sq_0)" width="12.5" height="12.5" x="2.5" y="74">
+    <title>
+      Octagon Shadow fold Origami that I made for my partner
+    </title>
+  </image>
 
   {% for topic in site.data.hobbies %}
     <text x="-16" y="{{ forloop.index0 | times: 3 | plus: 72}}">
@@ -401,14 +488,14 @@ permalink: resume.svg
     </text>
 
 
-    <circle cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 8}}" r=".75">
+    <circle class="bull" cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 8}}" r=".75">
     </circle>
     <text x="20" y="{{ forloop.index0 | times: 12 | plus: 9}}">
       {{ experience.points | first }}
     </text>
     
     
-    <circle cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 11}}" r=".75">
+    <circle class="bull" cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 11}}" r=".75">
     </circle>
     <text x="20" y="{{ forloop.index0 | times: 12 | plus: 12}}">
       {{ experience.points | last }}
@@ -439,13 +526,13 @@ permalink: resume.svg
       {{ school.text[0] }}
     </text>
     
-    <circle cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 62}}" r=".75">
+    <circle class="bull" cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 62}}" r=".75">
     </circle>
     <text x="20" y="{{ forloop.index0 | times: 12 | plus: 63}}">
       {{ school.points | first }}
     </text>
     
-    <circle cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 65}}" r=".75">
+    <circle class="bull" cx="18.5" cy="{{ forloop.index0 | times: 12 | plus: 65}}" r=".75">
     </circle>
     <text x="20" y="{{ forloop.index0 | times: 12 | plus: 66}}">
       {{ school.points | last }}
@@ -454,8 +541,33 @@ permalink: resume.svg
   {% endfor %}  
 
 
-  <text class="subtitle" x="32" y="96">
-    Tools Used for Résumé
+  <text class="subtitle" x="28.5" y="96">
+    Tools Used to make Résumé
+  </text>
+    
+  <text x="29" y="99">
+    Jekyll
+  </text>
+  
+  <circle class="bull" cx="36.5" cy="98" r=".75">
+  </circle>
+    
+  <text x="38.5" y="99">
+    JSON
+  </text>
+  
+  <circle class="bull" cx="45.5" cy="98" r=".75">
+  </circle>
+    
+  <text x="48" y="99">
+    SVG
+  </text>
+  
+  <circle class="bull" cx="54.5" cy="98" r=".75">
+  </circle>
+      
+  <text x="56" y="99">
+    Liquid
   </text>
 
 </svg>
