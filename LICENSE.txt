@@ -1,4 +1,4 @@
-All javascript and blog content related files are licensed by:
+All javascript-based art and blog content related files are licensed by:
 
 Creative Commons Attribution 4.0 International Licensei, whereby the entire license text can be found here: http://creativecommons.org/licenses/by/4.0/
 
@@ -6,7 +6,7 @@ All other content is licensed by:
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Brian Noyama
+Copyright (c) 2017 Brian Noyama
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

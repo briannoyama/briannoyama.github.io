@@ -51,12 +51,15 @@ var polygons = (function(canvas, coordinates){
 
 	function anim() {
 		for (var i = 0; i < pnts_length; i++) {
-			pnts[i][0] = ((max_cnt - cnt) * mv_pnts[i][0][0] + cnt * mv_pnts[i][1][0])/max_cnt;
-			pnts[i][1] = ((max_cnt - cnt) * mv_pnts[i][0][1] + cnt * mv_pnts[i][1][1])/max_cnt;
+			pnts[i][0] = ((max_cnt - cnt) * mv_pnts[i][0][0] + cnt * 
+			  mv_pnts[i][1][0])/max_cnt;
+			pnts[i][1] = ((max_cnt - cnt) * mv_pnts[i][0][1] + cnt * 
+			  mv_pnts[i][1][1])/max_cnt;
 		}
 
 		for (var i = 0; i < poly_length; i++) {
-			polys[i].setAttribute('points', poly_pnts[i].map(e => e[0] + ' ' + e[1]).join());
+			polys[i].setAttribute('points', 
+			  poly_pnts[i].map(e => e[0] + ' ' + e[1]).join());
 		}
 
 		cnt += 1;
