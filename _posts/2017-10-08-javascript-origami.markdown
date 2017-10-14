@@ -4,14 +4,14 @@ title:  "Animating Origami"
 image: "fib-origami.png"
 excerpt: "Using Javascipt and SVGs to create origami inspired animations"
 date:   2017-10-08
-categories: Javascript Origami
+categories: ComSci Art
 ---
-The code for this post can be found in `briannoyama.github.io/assets/res/` ([link][res]). 
+The code for this post can be found in *briannoyama.github.io/<wbr/>assets/res/* ([link][res]). 
 
 When designing my website, I knew I wanted it to feel like a personal space where I could express myself creatively. I also wanted something cool and non-trivial, i.e. an excuse to play with Javascript. I settled on creating a theme whereby I would animate an abstract version of the first Origami I sold in an art shop:
 
 <figure class="full">
-  <img class="clipleft" src="/assets/images/fib-origami.jpg" title="A shadow-fold Origami that encodes the Fibonacci sequence" alt="A shadow-fold Origami that encodes the Fibonacci sequence"/>
+  <img src="/assets/images/fib-origami.jpg" title="A shadow-fold Origami that encodes the Fibonacci sequence" alt="A shadow-fold Origami that encodes the Fibonacci sequence"/>
   <figcaption>
     A shadow-fold Origami that encodes the Fibonacci sequence as squares between triangular pleats.
   </figcaption>
@@ -20,7 +20,7 @@ When designing my website, I knew I wanted it to feel like a personal space wher
 In the figure above, carefully placed pleats create shadows on a flat piece of paper to create an origami inspired by the Fibonacci sequence. I created the original design for the origami using CAD (Computer Aided Design) software which I then carefully folded onto a piece of hand painted paper I found at an art fair. For my website, I needed a slightly different version of the design. I chose to make a paper prototype: 
 
 <figure class="full">
-  <img class="clipright" src="/assets/images/origami-prototype.jpg" title="Pen and paper prototype for origami website animation" alt="Pen and paper prototype for origami website animation"/>
+  <img src="/assets/images/origami-prototype.jpg" title="Pen and paper prototype for origami website animation" alt="Pen and paper prototype for origami website animation"/>
   <figcaption>
     A pen and paper prototype for the origami website animation.
   </figcaption>
@@ -72,7 +72,7 @@ function anim() {
   </figcaption>
 </figure>
 
-Using the DOM (Document Object Model), one can then use the coordinates to update SVG (Standard Vector Graphics) polygons in an animation loop. To see the final result, simply refresh this page and examine the upper left corner. I used a similar trick to animate many other parts of this site:
+Using the DOM (Document Object Model), one can then use the coordinates to update SVG (Scalable Vector Graphics) polygons in an animation loop. To see the final result, simply refresh this page and examine the upper left corner. I used a similar trick to animate many other parts of this site:
 
 - `paths.js` animates the bars on the top and left sides of the page.
 - `circlelinks.js` animates the circles to make a fun mouseover effect.

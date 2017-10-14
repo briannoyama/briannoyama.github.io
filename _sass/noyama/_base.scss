@@ -17,6 +17,10 @@ p, ul, ol {
   font-size: $base-font-size;
 }
 
+li {
+  margin-left: $spacing-unit;
+}
+
 p.first {
   @extend %whiteshadow;
 }
