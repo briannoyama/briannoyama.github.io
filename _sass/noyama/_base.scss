@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 p, ul, ol {
   font-family: $base-font-family;
   font-size: $base-font-size;
+  line-height: $spacing-unit;
 }
 
 li {

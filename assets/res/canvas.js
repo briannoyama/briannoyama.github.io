@@ -18,15 +18,9 @@ var canvas = (function(colors, anim){
   window_.scroll(function(){
     var w_offset = window_.scrollTop();
     if (w_offset > height){
-      svg.setAttribute('style','top: auto; bottom: 0;');
+       svg.setAttribute('style','top: auto; bottom: 0; position: fixed;');
     } else {
-      svg.setAttribute('style','top: 0; bottom: auto;');
-    }
-
-    if (w_offset > title.offsetHeight){
-      menu.setAttribute('style','position: fixed;');
-    } else {
-      menu.setAttribute('style','position: relative;');
+       svg.setAttribute('style','top: 0; bottom: auto; position: absolute;');
     }
 
   });

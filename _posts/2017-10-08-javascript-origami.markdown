@@ -26,7 +26,7 @@ In the figure above, carefully placed pleats create shadows on a flat piece of p
   </figcaption>
 </figure>
 
-When planning any large project, whether in art, writing or programming, it helps to create a quick draft of what one plans to do. I decided to encode the pleats as polygons. After this, it next made sense to simulate the folding of the pleats by moving the points that defined them. In order to do so, each point needed a label (hence the numbers in the diagram above).
+When planning any large project, whether in art, writing or programming, I find it helps to create a quick draft of what I plan to do as it helps me trawl for requirements. E.g. I decided to encode the pleats as polygons. After this, it next made sense to simulate the folding of the pleats by moving the points that defined them. In order to do so, each point needed a label (hence the numbers in the diagram above).
 
 These numbers translated to offsets in an array:
 
@@ -40,11 +40,11 @@ var mv_pnts = [[[-12, 5],[-12, 4]],
               ...
 {% endhighlight %}
   <figcaption>
-    polys_coors.js: Defining the beginning and end coordinates.
+    polys_coors.js: Defining the beginning and ending coordinates.
   </figcaption>
 </figure>
 
-The first "tuple" of numbers represented the starting point of the coordinate, while the second number represented the final destination of the coordinate. To make the coordinates slide from their beginning destination to the end, I used a counter `cnt` to keep track of the number of frames for an animation of length `max_cnt`.   
+The first tuple of numbers represents the starting point of the coordinate, while the second tuple represents the final destination of the coordinate. To make the coordinates slide from their beginning destination to the end, I used a counter `cnt` to keep track of the number of frames for an animation of length `max_cnt`.   
 
 
 <figure class="full">
@@ -80,7 +80,7 @@ Using the DOM (Document Object Model), one can then use the coordinates to updat
 - `pie_experience.js` animates the pie chart that I use show my work experience.
 - `skill_bars.js` animates the bars that show my proficiency with different skills.
 
-If one looks at the code in each of these, one will see some copy/paste code, which is admittedly *code smell*: code problems that do not prevent *current* functionality, but that may have nonfunctional flaws. Furthermore, there exists libraries, such as D3 ([link][d3]) that would have effectively abstracted a lot of the repeated pieces of code. I did take on this project to learn Javascript, and while I did pick up some jQuery ([link][jquery]), D3 felt a bit like a sledge-hammer.
+If one looks at the source for each of these, one will see some copy/paste code, which is admittedly *code smell*: code problems that do not prevent *current* functionality, but that may have nonfunctional flaws. Furthermore, there exists libraries, such as D3 ([link][d3]) that would have effectively abstracted a lot of the repeated pieces of code. I did take on this project to learn Javascript, and while I did pick up some jQuery ([link][jquery]), D3 felt like a sledge-hammer, over-kill for a personal webpage. For enterprise, I would prefer to use D3 instead.
 
 Otherwise, I finally wrote my first blog post! Thanks for reading =).
 

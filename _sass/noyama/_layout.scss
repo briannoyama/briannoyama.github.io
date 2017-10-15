@@ -33,6 +33,14 @@ h1.footer-heading{
 div.footer-col ul{
   list-style-type: none;
   padding: 0;
+
+  li {
+    margin-left: 0;
+  }
+}
+
+p.rss-subscribe{
+  margin-top: 3*$spacing-unit;
 }
 
 
@@ -121,6 +129,7 @@ p.post-meta {
   color: $grey-color;
   font-size: $small-font-size;
   padding-bottom: $spacing-unit;
+  @extend %whiteshadow;
 }
 
 /**
