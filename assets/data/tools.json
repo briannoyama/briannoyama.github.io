@@ -13,7 +13,7 @@
   {"type": "Linux/Bash/Shell",
    "amnt": 0.6,
    "desc": "<p>Whenever I don't know how to use a command, I think <i>man</i>, if only there was a way to look up what it does? Needless to say, I know just enough to be snarky, but not enough to not use Google! Usually I can get by using a <i>.bashrc</i> file to predefine those pesky PATHs and other commands I have a tough time remembering. I also enjoy Vim, though I have successfully avoided Emacs for quite some time.</p>"},
-  {"type": "AWS/Cloud/Terraform",
+  {"type": "AWS/Cloud/<wbr>Terraform",
    "amnt": 0.6,
    "desc": "<p>Amazon Web Services consists of over 90 services. Of those 90 I have used the following:</p><ul><li>Web Console</li><li>Elastic Cloud Compute (EC2) instances</li><li>EC2 Container Service/Repo (ECS/ECR)</li><li>Elastic File System (EFS)</li><li>Elastic Search (Not AWS specific)</li></ul><p>I have also tinkered or helped with the following:</p><ul><li>IAM policies</li><li>Ansible/Terraform/Infrastructure as Code</li><li>DynamoDB</li></ul>"},
   {"type": "Containers/Docker",
