@@ -7,7 +7,7 @@
   {"type": "Python",
    "amnt": 0.8,
    "desc": "<p>I first used python to create plugins for DNA Origami CAD software. At Kingland, Python is the primary language I use, and I prefer it for its conciseness and my productivity. However, for speed and traceability statically typed languages (such as Java) often make more sense. </p>"},
-  {"type": "PostgreSQL/Flyway",
+  {"type": "PostgreSQL/<wbr>Flyway",
    "amnt": 0.6,
    "desc": "<ul><li>I have installed, setup and used Postgres for RDBS.</li> <li>I use psql to manually run queries and pgpsql to create server side functions.</li><li>I have used EXPLAIN/ANALYZE commands to find missing indices.</li><li>I have set up cron jobs to vaccuum the database to increase efficiency.</li><li>I have installed and used <a href=\"https://flywaydb.org/\">flyway to incrementally design schemas.</a></li></ul>"},
   {"type": "Linux/Bash/Shell",
