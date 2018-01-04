@@ -1,3 +1,9 @@
 _site/*
 .sass-cache/*
 Gemfile*
+*.aux
+*.bbl
+*.bak
+*.synctex
+*.log
+*.blg
