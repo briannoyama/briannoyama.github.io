@@ -6,9 +6,9 @@
    "time": [[201601, "now"]],
    "hours": 30,
    "points": [
-     "Presented PoCs and used NLP to harvest Data",     
-     "Designed DB schemas and Containers on AWS"],
-   "desc": "<p>A small-medium sized company that specializes in creating software solutions to help large companies comply with regulations mostly in the financial industry. Notable accomplishments include:</p> <ul> <li>Creating proof-of-concept code and demoing for clients, who eventually signed a large, multi-year contract</li> <li>Implementing Natural Language Processing and Bio-informatics algorithms to scrape information from unstructured data</li> <li>Creating a Docker Container that mounts an AWS EFS drive that runs as a service in AWS ECS</li> <li>Deployed microservice accessed via ELBs on AWS ECS using Terraform</li> <li>Interviewing and mentoring interns, and presenting on behalf of Kingland on campus and at recruiting events</li> </ul>",
+     "PoCs, NLP, Microservice, AWS, Terraform/IaC",     
+     "Docker, RDB schemas, Recuiting/Interviewing"],
+   "desc": "<p>A small-medium sized company that specializes in creating software solutions to help large companies comply with regulations mostly in the financial industry. Notable accomplishments include:</p> <ul> <li>Creating proof-of-concept code and demoing for clients, who eventually signed a large, multi-year contract</li> <li>Implementing Natural Language Processing and Bio-informatics algorithms to scrape information from unstructured data</li> <li>Deploying microservices accessed via ALBs using Terraform, and a Docker Container that mounts an AWS EFS drive that runs integration tests via Gauge in AWS ECS</li> <li>Interviewing full-time ML/AI candidates, and presenting/training internally</li> <li>Interviewing/Mentoring interns, and presenting on behalf of Kingland on campus and at recruiting events</li> </ul>",
    "t_pos":[[70,-90]]},
   {"company": "ISU CS Department",
    "position": "Instructor",

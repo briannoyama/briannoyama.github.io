@@ -31,8 +31,8 @@
   {"type": "CSS/SASS",
    "amnt": 0.5,
    "desc": "<p>I do not have encyclopedic knowledge of all of the properties one can manipulate with CSS, but I do at least understand the difference between margins and padding. This website shows what I can do with CSS, including some custom, tailored, responsive design.</p>"},
-  {"type": "C/C++/Other Lang.s",
+  {"type": "C/C++/Golang/Other",
    "amnt": 0.4,
-   "desc": "<p>Mostly to see what all the hype was about, I used C++ to write:</p><ul><li>A program for approximating the surface area of protein molecules that implements a deterministic algorithm for evenly distributing points on a sphere</li><li>A global sequence alignment algorithm for matching approximately similar pieces of DNA (or any type of string)</li></ul><p>I've also dabbled in other languages:</p> <ul><li>I've used C with the Java Native Interface to write a proof of concept code for rendering a cube using only integer arithmetic</li><li>I've used both Verilog and VHDL to program Field Programmable Gate Arrays</li><li>I also have a fair ammount of experience reading and debugging MIPS assembly, and some experience with AVR</li></ul>"}
+   "desc": "<p>Mostly to see what all the hype was about, I used C++ to write:</p><ul><li>A program for approximating the surface area of protein molecules that implements a deterministic algorithm for evenly distributing points on a sphere</li><li>A global sequence alignment algorithm for matching approximately similar pieces of DNA (or any type of string)</li></ul><p>I've also dabbled in other languages:</p> <ul><li>I've used C with the Java Native Interface to write a proof of concept code for rendering a cube using only integer arithmetic</li><li>I've used both Verilog and VHDL to program Field Programmable Gate Arrays</li><li>I recently picked up Golang, for which I am attempting to implement a balancing Bounding Volume Hierarchy</li></ul>"}
   ]
 }
